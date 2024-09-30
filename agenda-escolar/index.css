@@ -1,0 +1,50 @@
+.body-structure{
+    display: flex;
+}
+
+.title{
+    width: 100%;
+    height: 10vw;
+    background-color: #00ffff;
+    font-size: 3em;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-margin{
+    width: 5%;
+    background-color: rgb(15, 109, 250);
+}
+
+.body-content{
+    width: 90%;
+    background-color: antiquewhite;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.button-nav-item{
+    width: fit-content;
+    height: 60px;
+    background-color: grey;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.img-button{
+    width: 40px;
+    height: 40px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#btnHome, #btnCalendario{
+    margin-right: 5%;
+}
+
