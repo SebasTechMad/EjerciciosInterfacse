@@ -77,6 +77,11 @@ td{
     color: #0089CD;
 }
 
+.td-text-description{
+    background-color: white;
+    color: black;
+}
+
 .td-subject-diseno{
     background-color: #C9DAF8;
 }
@@ -99,6 +104,11 @@ td{
 
 .td-subject-despliegue{
     background-color: #6D9EEB;
+}
+
+.link-text{
+    text-decoration: none;
+    color: black;
 }
 
 
