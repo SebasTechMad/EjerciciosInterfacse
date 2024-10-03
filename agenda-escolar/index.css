@@ -21,6 +21,8 @@ body{
 
 .body-margin{
     width: 2%;
+    display: flex;
+    align-items: center;
 }
 
 .body-content{
@@ -119,7 +121,7 @@ td{
 
 .form-contact{
     display: flex;
-    width: 70%;
+    width: 27%;
     border: black solid 2px;
     border-radius: 1rem;
 }
