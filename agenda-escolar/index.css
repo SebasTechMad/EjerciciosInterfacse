@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     background-color: #0089CD;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -17,6 +18,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .body-margin{
