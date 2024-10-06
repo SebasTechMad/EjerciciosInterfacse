@@ -8,63 +8,29 @@
         <link rel="shortcut icon" href="./srcs/ies-tetuanICO.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="title">
-            <h2>Agenda Escolar</h2>
-        </div>
+            <div class="title">
+                <h2 class="title-text">Agenda Escolar</h2>
+                <div class="nav-buttons">
+                    <a id="btnHome" href="./index.html" class="button"><img src="./srcs/reloj-de-pared.png" alt="" class="img-button"></a>
+                    <a id="btnCalendario" href="https://www.iestetuan.es/varios/2024calendarioescolar.pdf" class="button" target="_blank"><img src="./srcs/calendario.png" alt="" class="img-button"></a>
+                    <a id="btnContacto" class="button"><img src="./srcs/mi-perfil.png" alt="" class="img-button"></a>
+                </div>
+            </div>
 
         <div class="body-structure">
             <div class="body-margin"><br></div>
-            <div class="body-content">
-                 <!-- spacer -->
-                 <br>
-                 <div class="nav-buttons">
-                    <button class="button-nav-item" id="btnHome">
-                        <img src="./srcs/reloj-de-pared.png" alt="" class="img-button">
-                        <a href="./index.html" class="link-text">Horario</a>
-                    </button>
-                    <button class="button-nav-item" id="btnCalendario">
-                        <img src="./srcs/calendario.png" alt="" class="img-button">
-                        <a href="https://www.iestetuan.es/varios/2024calendarioescolar.pdf" target="_blank" class="link-text">Calendario</a>
-                    </button>
-                    <button class="button-nav-item" disabled="disabled">
-                        <img src="./srcs/agregar-usuario.png" alt="" class="img-button">
-                        Ficha contacto
-                    </button>
-                 </div>
-                 <br><br><br><br>
-                 <h2 style="margin-left: 42%;">DATOS DE CONTACTO</h2>
-                 
-                 <div class="body-structure" style="justify-content: center;">
-                    <div class="body-margin"><br></div>
-                 
-                    <div class="form-contact">
-                        <form action="" class="content-form">
-                            <br>
-                            <label class="label-form">Nombre del contacto</label>
-                            <input type="text" class="component-form"> <br><br>
-                            <label class="label-form">Correo electrónico</label>
-                            <input type="email" class="component-form">
-                            <br><br>
-                            <label class="label-form">Contraseña</label>
-                            <input type="password" class="component-form"> <br><br>
-                            <label class="label-form">Confirmar contraseña</label>
-                            <input type="password" class="component-form"> <br><br>
-                        </form>
+            <div class="body-content" style="margin-top: 7%;">
+                 <div class="structure-profile">
+
+                    <div class="profile">
+                        <div class="profile-pic">
+                            <img src="./srcs/mi-perfil.png" alt="" class="profile-pic-img">
+                        </div>
                     </div>
-                    <br>
-                    <div class="body-margin" style="padding-left: 10%; flex-direction: column; justify-content: center;">
-                        <button class="button-nav-item" id="btnHome" style="margin-bottom: 130%;">
-                            <img src="./srcs/disquete.png" alt="" class="img-button">
-                            <h3>Guardar</h3>
-                        </button>
-                        <button class="button-nav-item" id="btnCalendario">
-                            <img src="./srcs/cerrar-sesion.png" alt="" class="img-button">
-                            <h3>Cerrar sesion</h3>
-                        </button>
-                    </div>
+
                  </div>
 
-                 <br><br>
+
             </div>
             <div class="body-margin"></div>
         </div>
