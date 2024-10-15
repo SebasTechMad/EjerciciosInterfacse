@@ -1,0 +1,137 @@
+body{
+    background-color:#525756;
+}
+
+.body-content{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(0, 0, 0,0.65);
+    width: 100%;
+    height: 300vh;
+    border-radius: 1.7rem;
+}
+
+
+.header-class{
+    width: 100%;
+    flex-direction: column;
+    background-color:rgb(0, 0, 0,0.8);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.header-main-content{
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.header-logo{
+    width: 10%;
+    height: 70%;
+}
+
+
+.title-responsive{
+    font-size: 3vw;
+    color: white;
+}
+
+a.boton-aula{
+    font-size: 2vw;
+    padding: 0.6rem 1.6rem;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(255, 255, 255, 0.5) 1.95px 1.95px 2.6px;
+    border-radius: 5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.header-separator{
+    color:white;
+    width: 100%;
+    height: 0%;
+    margin: 0rem;
+}
+
+a.boton-aula:hover{
+    background-color: rgb(182, 179, 179);
+}
+
+ .header-img-button-form{
+    width: 3vw;
+    height: 3vw;
+    padding-right: 20%;
+}
+
+
+.presentacion-daw{
+    margin-top: 10%;
+    width: 100%;
+    height: 80vh;
+
+    z-index: 1;
+    background-image: url(../srcs/fondo-code.jpg);
+    background-size: cover;
+    filter: blur(0.2rem);
+    position: relative;
+    background-attachment: fixed;
+}
+
+.menu-navs{
+    margin-top: 10%;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button-item{
+    width: 20vw;
+    height: 10vh;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    border: solid white 2px;
+}
+
+.article-iframe{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.adjust-article-iframe{
+    width: 50vw;
+    height: 60vh;
+}
+
+#btnAsignaturas{
+    border-top-left-radius: 2rem;
+}
+
+#btnSecretaria{
+    border-top-right-radius: 2rem;
+}
