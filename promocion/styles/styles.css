@@ -44,6 +44,7 @@ body{
 .title-responsive{
     font-size: 3vw;
     color: white;
+    font-family: Akira;
 }
 
 a.boton-aula{
@@ -93,6 +94,11 @@ a.boton-aula:hover{
     background-attachment: fixed;
 }
 
+.text-presentacion-daw{
+   z-index: 3;
+   color: red;
+}
+
 .menu-navs{
     margin-top: 10%;
     width: 100%;
@@ -111,9 +117,11 @@ a.boton-aula:hover{
 .nav-button-item{
     width: 20vw;
     height: 10vh;
+    font-size: 2vw;
     background-color: rgb(0, 0, 0, 0.4);
     color: white;
     border: solid white 2px;
+    font-family:LEMONMILK-Bold ;
 
     transition-property: background-color, color, border;
     transition-duration: 0.2s;
@@ -147,8 +155,8 @@ a.boton-aula:hover{
 
 .item-redes-sociales{
     padding: 1rem 1rem 1rem 1rem;
-    
-    background-color: white;
+    z-index: auto;
+    background-color: rgb(255, 255, 255,1);
     color: black;
     box-shadow: rgba(255, 255, 255, 0.5) 1.95px 1.95px 2.6px;
     border-radius: 1rem;
@@ -156,11 +164,24 @@ a.boton-aula:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: none;
+
+    transition-property: background-color, padding, background-image;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 
-.item-redes-sociales:hover{
-background: rgb(255,164,0);
-background: radial-gradient(circle, rgba(255,164,0,1) 1%, rgba(119,9,121,1) 88%);
+.item-redes-sociales:hover#instagram{
+    background-color: rgb(182, 179, 179);
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+    background-image: url("../srcs/fondoig.avif");
+    background-size: cover;
+    
+}
+
+.item-redes-sociales:hover#twitter{
+    background-color: rgb(8, 234, 255);
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;   
 }
 
 
@@ -179,4 +200,16 @@ background: radial-gradient(circle, rgba(255,164,0,1) 1%, rgba(119,9,121,1) 88%)
 
 #btnSecretaria{
     border-top-right-radius: 2rem;
+}
+
+@font-face {
+    font-family:LEMONMILK-Bold ;
+    src: url(../fonts/LEMONMILK-Bold.otf);
+}
+
+
+
+@font-face {
+    font-family:Akira ;
+    src: url(../fonts/Akira\ Expanded\ Demo.otf);
 }
