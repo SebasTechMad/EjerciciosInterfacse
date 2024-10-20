@@ -1,8 +1,63 @@
+
+
+
 @media all and (max-width: 768px) {
     body{
         display: flex;
-        justify-content: center;
+        align-items: center;
         background-color: red;
+        flex-direction: column;
+    }
+
+    span{
+        font-size: 250%;
+        margin-left: 2%;
+    }
+
+    .div-rojo{
+        background-color: orange;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .div-gris{
+        background-color: grey;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .div-verde{
+        background-color: green;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .div-azul{
+        background-color: blue;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .div-morado{
+        background-color: purple;
+        width: 50%;
+        height: 150%;
+        display: flex;
+        justify-content: start;
+        color: white;
     }
 }
 
@@ -11,6 +66,57 @@
         display: flex;
         justify-content: center;
         background-color: blue;
+    }
+
+    span{
+        font-size: 250%;
+        margin-left: 2%;
+    }
+
+    .div-rojo{
+        background-color: orange;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .div-gris{
+        background-color: grey;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .div-verde{
+        background-color: green;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .div-azul{
+        background-color: blue;
+        width: 50%;
+        height: 150%;
+        margin-bottom: 2%;
+        display: flex;
+        justify-content: start;
+    }
+    
+    .div-morado{
+        background-color: purple;
+        width: 50%;
+        height: 150%;
+        display: flex;
+        justify-content: start;
+        color: white;
     }
     
 }
