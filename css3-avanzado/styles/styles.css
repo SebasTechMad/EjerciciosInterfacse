@@ -50,12 +50,11 @@ hr{
 
       ul{
         display: none;
-        right: 2rem;
-        bottom: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         padding-top: 0.8rem;
         padding-right: 0.8rem;
         padding-bottom: 0.8rem;
+        left: -2rem;
 
         width: fit-content;
         z-index: 10;
@@ -71,7 +70,7 @@ hr{
       li {
         display: block;
         width: 32vw;
-        padding: 0.7rem;
+        padding: 0.5rem;
         font-size: 80%;
         margin-bottom: 0.13rem;
 
@@ -85,6 +84,16 @@ hr{
       }
 
       li:hover{
-        background-color: aqua;
+        background-color: white;
+        color: black;
+      }
+
+      .informacion{
+        margin-top: 7vh;
+      }
+
+      .style-iframe{
+        width: 100%;
+        height: fit-content;
       }
 }
