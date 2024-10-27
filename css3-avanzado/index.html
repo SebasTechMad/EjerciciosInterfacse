@@ -5,41 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>css3 Avanzado</title>
         <link rel="stylesheet" href="./styles/styles.css">
-        <script src="./js/index.js"></script>
     </head>
     <body>
         <header class="header-title">
             <span><b>CSS AVANZADO</b></span>
         </header>
-
-        
         <nav class="nav-buttons">
             <input type="checkbox" id="chkMenu">
             <label for="chkMenu" class="lblMenu">☰</label>
                 <ul class="lista-hamburguesa" id="menu">
-                    <li id="lstRoundedCorners">CSS Rounded Corners</li>
-                    <li id="lstBorderImages">CSS Border Images</li>
-                    <li id="lstBackgrounds">CSS Backgrounds</li>
-                    <li id="lstColors">CSS Colors</li>
-                    <li id="lstColorKeyWords">CSS Color Keywords</li>
-                    <li id="lstGradients">CSS Gradients</li>
-                    <li id="lstShadows">CSS Shadows</li>
-                    <li id="lstTextEffects">CSS Text Effects</li>
-                    <li id="lstWebFonts">CSS Web Fonts</li>
+                    <li id="lstRoundedCorners" onclick="roundedCorners();">CSS Rounded Corners</li>
+                    <li id="lstBorderImages" onclick="BorderImages();">CSS Border Images</li>
+                    <li id="lstBackgrounds" onclick="Backgrounds();">CSS Backgrounds</li>
+                    <li id="lstColors" onclick="Colors();">CSS Colors</li>
+                    <li id="lstColorKeyWords" onclick="Colorskeywords();">CSS Color Keywords</li>
+                    <li id="lstGradients" onclick="Gradients();">CSS Gradients</li>
+                    <li id="lstShadows" onclick="Shadows();">CSS Shadows</li>
                 </ul>
         </nav>
 
         <section class="informacion">
             <div class="header-introduccion">
-                <h1 style="text-align: center;">BIENVENIDO</h1>
-                <h3>En esta página web puedes aprender algunas de las funcioens que tiene 'CSS'. 
-                Para poder aprender las funciones, haz click en los botones</h3>
+                <h1 style="text-align: center;" id="lblTitle">BIENVENIDO</h1>
+                <div class="definicion">
+                    <h3 id="lblInformation">En esta página web puedes aprender algunas de las funcioens que tiene 'CSS'. Para poder aprender las funciones, haz click en los botones</h3>
+                </div>
             </div>
 
             <div class="ejemplo">
-                <iframe src="./ejemplos/ejemplo.html" class="style-iframe" frameborder="0"></iframe>
+                <iframe id="frameEjemplos" sandbox="allow-scripts allow-same-origin"  src="./ejemplos/ejemplo.html" class="style-iframe" frameborder="0"></iframe>
             </div>
         </section>
-
+        
+        <script src="./js/index.js"></script>
     </body>
 </html>

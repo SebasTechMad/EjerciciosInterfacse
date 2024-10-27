@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+
+            div{
+                width: 20vw;
+                height: 20vh;
+            }
+
+            .div-row{
+                width: 100%;
+                display: flex;
+                gap: 2rem;
+            }
+
+            .GradientLinear1{
+                background-image: linear-gradient(red, yellow);
+            }
+
+            .GradientLinear2{
+                background-image: linear-gradient(to right, red , yellow);
+            }
+
+            .GradientLinear3{
+                background-image: linear-gradient(to bottom right, red, yellow);
+            }
+
+            .GradientRadial1{
+                background-image: radial-gradient( red, yellow, green);
+            }
+
+            .GradientRadial2{
+                background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+            }
+
+            .GradientRadial3{
+                background-image: radial-gradient(circle, red, yellow, green);
+            }
+
+            .GradientConic1{
+                background-image: conic-gradient(red, yellow, green, blue, black);
+            }
+
+            .GradientConic2{
+                background-image: conic-gradient(red, yellow, green, blue, black);
+                border-radius: 50%;
+            }
+
+            .GradientConic3{
+                background-image: repeating-conic-gradient(red 10%, yellow 20%);
+                border-radius: 50%;
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="div-row">
+            <div class="GradientLinear1"></div>
+            <div class="GradientLinear2"></div>
+            <div class="GradientLinear3"></div>
+        </div>
+        <div class="div-row">
+            <div class="GradientRadial1"></div>
+            <div class="GradientRadial2"></div>
+            <div class="GradientRadial3"></div>
+        </div>
+        <div class="div-row">
+            <div class="GradientConic1"></div>
+            <div class="GradientConic2"></div>
+            <div class="GradientConic3"></div>
+        </div>
+    </body>
+</html>

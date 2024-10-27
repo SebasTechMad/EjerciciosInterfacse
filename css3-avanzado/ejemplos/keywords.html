@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 3vw;
+                text-align: center;
+            }
+
+            div{
+                width: 80vw;
+                height: fit-content;
+            }
+
+            .normal{
+                background-color: rgb(203, 226, 169);
+            }
+
+            .transparente{
+                border: 2px solid green;
+                background-color: transparent;
+            }
+
+            .color-concurrente{
+                background-color: currentColor;
+            }
+
+            .inherente{
+                border: 2px dotted blue;
+                background-color: grey;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="normal">Soy un div normal</div>
+        <div class="transparente">Soy un div con fondo transparente</div>
+        <div class="color-concurrente"><span style="color: white;">Soy un div con fondo de color concurrente</span></div>
+        <div class="inherente"><span style="border: inherit;">Soy un div con un texto que copia el borde que tengo</span></div>
+    </body>
+</html>
