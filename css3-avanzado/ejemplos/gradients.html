@@ -4,12 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="../styles/examples-styles.css">
         <style>
             body{
                 display: flex;
                 flex-direction: column;
                 gap: 2rem;
                 flex-wrap: wrap;
+                font-size: 4vh;
             }
 
             div{
@@ -69,19 +71,26 @@
     </head>
     <body>
         <div class="div-row">
-            <div class="GradientLinear1"></div>
-            <div class="GradientLinear2"></div>
-            <div class="GradientLinear3"></div>
+            <div class="GradientLinear1">background-image: linear-gradient(red, yellow);</div>
+            <div class="GradientLinear2">background-image: linear-gradient(to right, red , yellow);</div>
+            <div class="GradientLinear3">background-image: linear-gradient(to bottom right, red, yellow);</div>
         </div>
         <div class="div-row">
-            <div class="GradientRadial1"></div>
-            <div class="GradientRadial2"></div>
-            <div class="GradientRadial3"></div>
+            <div class="GradientRadial1">background-image: radial-gradient( red, yellow, green);</div>
+            <div class="GradientRadial2">background-image: radial-gradient(red 5%, yellow 15%, green 60%);</div>
+            <div class="GradientRadial3">background-image: radial-gradient(circle, red, yellow, green);</div>
         </div>
         <div class="div-row">
             <div class="GradientConic1"></div>
             <div class="GradientConic2"></div>
-            <div class="GradientConic3"></div>
+            <div class="GradientConic3">;</div>
+        </div>
+        <div class="div-row">
+            <div class="css-code">background-image:<br>conic-gradient(red, yellow, green, blue, black);</div>
+            <div class="css-code">background-image: conic-gradient(red, yellow, green, blue, black);
+                border-radius: 50%;</div>
+            <div class="css-code">background-image: repeating-conic-gradient(red 10%, yellow 20%);
+                border-radius: 50%</div>
         </div>
     </body>
 </html>
