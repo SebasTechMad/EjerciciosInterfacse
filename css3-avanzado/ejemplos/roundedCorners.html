@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rounded corners</title>
+        <link rel="stylesheet" href="../styles/examples-styles.css">
         <style>
             body{
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                gap: 2rem;
             }
 
             .rectangulo1{
@@ -31,13 +33,23 @@
                 width: 4rem;
                 height: 4rem;
                 border-radius: 1rem;
+                margin-right: 2rem;
             }
 
         </style>
     </head>
     <body>
-        <div class="rectangulo1"><br></div>
-        <div class="rectangulo2"><br></div>
-        <div class="rectangulo3"><br></div>
+        <div class="div-example">
+            <div class="rectangulo1"></div>
+            <div class="css-code"><span>background-color: red;<br>width: 4rem;<br>height: 4rem;<br>margin-right: 2rem;</span></div>
+        </div>
+        <div class="div-example">
+            <div class="rectangulo2"></div>
+            <div class="css-code"><span>background-color: green;<br>width: 4rem;<br>height: 4rem;<br>margin-right: 2rem;<br>border-top-left-radius: 1rem;<br>border-bottom-right-radius: 1rem;</span></div>
+        </div>
+        <div class="div-example">
+            <div class="rectangulo3"></div>
+            <div class="css-code"><span>background-color: blue;<br>width: 4rem;<br>height: 4rem;<br>border-radius: 1rem;</span></div>
+        </div>
     </body>
 </html>

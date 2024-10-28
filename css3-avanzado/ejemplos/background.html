@@ -3,19 +3,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="../styles/examples-styles.css">
         <style>
-            div{
+            body>div:first-child{
                 width: 100%;
                 height: 50vh;
                 background-image: url(../src/fondo3.png), url(../src/fondo.jpg);
                 background-repeat: repeat, repeat;
                 background-position: center, left;
                 background-size: contain, cover;
+                margin-bottom: 1rem;
             }
         </style>
     </head>
     <body>
-        <div>
-        </div>
+        <div></div>
+        <div class="div-example">
+            <div class="rectangulo1"></div>
+            <div class="css-code"><span>width: 100%;<br>height: 50vh;<br>background-image: url(../src/fondo3.png), url(../src/fondo.jpg);<br>background-repeat: repeat, repeat;<br>background-position: center, left;<br>background-size: contain, cover;</span></div>
+        </div>  
     </body>
 </html>

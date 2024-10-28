@@ -1,0 +1,13 @@
+.css-code{
+    background-color: rgb(70, 72, 72);
+    color: white;
+    width: fit-content;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+.div-example{
+    display: flex;
+    align-items: center;
+}
+

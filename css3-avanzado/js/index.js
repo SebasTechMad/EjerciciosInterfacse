@@ -36,7 +36,7 @@ let BorderImages = () =>{
     titulo.textContent = "CSS Border Images";
     informacion.textContent = "Esta propiedad añade un borde con una imagen que nos defina el usuario";
     iframe.src = "./ejemplos/borderImages.html";
-    zoomFrame(0);
+    zoomFrame(2);
 }
 
 let Backgrounds = () =>{
@@ -48,7 +48,7 @@ let Backgrounds = () =>{
     titulo.textContent = "CSS Backgrounds";
     informacion.textContent = "Esta propiedad nos permite añadir imagenes como fondo de pantalla, las imágenes que tu quieres, si quieres que se repita, en qué posición se cargará, etc...";
     iframe.src = "./ejemplos/background.html";
-    zoomFrame(3);
+    //zoomFrame(3);
     
 }
 

@@ -4,15 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="../styles/examples-styles.css">
         <style>
+            body{
+                display: flex;
+                flex-direction: column;
+            }
             h1{
             border: 70px solid;
             padding: 1px;
-            border-image: url("../src/patron.jpg") 30 stretch;
+            border-image: url("../src/patron.jpg") 30 30 stretch;
             }
         </style>
     </head>
     <body>
-            <h1 style="text-align: center;">hola que tal</h1>
+            <h1 style="text-align: center;">hola que tal</h1><br>
+            <div class="div-example">
+                <span class="css-code">border: 70px solid;<br>padding: 1px;<br>border-image: url("../src/patron.jpg") 30 stretch;</span>
+            </div>
     </body>
 </html>

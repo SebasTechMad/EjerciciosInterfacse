@@ -4,18 +4,36 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Colores</title>
+        <link rel="stylesheet" href="../styles/examples-styles.css">
         <style>
             body{
                 font-size: 3vw;
+                display: flex;
+                flex-wrap: wrap;
             }
 
-            div{
-                width: 100%;
+            .div-color{
+                width: 70%;
                 height: 15vh;
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
             }
+
+            .div-example-colors{
+                width: 29%;
+                height: 15vh;
+                background-color: rgb(70, 72, 72);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 2vw;
+
+                border-radius: 0.3rem;
+            }
+
             .redRGB{
                 background-color:rgb(255, 0, 0);
                 color: white;
@@ -39,11 +57,11 @@
         </style>
     </head>
     <body>
-        <div class="redRGB">Rojo RGB con 100% opacidad</div>
-        <div class="blueRGB">Azul RGB con 70% opacidad</div>
-        <div class="greenRGB">Verde RGB con 40% opacidad</div>
-        <div class="redHSL">Rojo HSL, 0º grados con 100% saturacion y 50% brillo</div>
-        <div class="blueHSL">Azul HSL, 240º grados con 70% saturacion y 60% brillo</div>
-        <div class="greenHSL">Verde HSL, 150º grados con 100% saturacion, 50% brillo y 50% opacidad</div>
+        <div class="div-color redRGB">Rojo RGB con 100% opacidad</div><div class="div-example-colors"><span>background-color:rgb(255, 0, 0);</span></div>
+        <div class="div-color blueRGB">Azul RGB con 70% opacidad</div><div class="div-example-colors"><span>background-color:rgb(0, 0, 255,0.7);</span></div>
+        <div class="div-color greenRGB">Verde RGB con 40% opacidad</div><div class="div-example-colors"><span>background-color:rgb(0, 255, 0, 0.4);</span></div>
+        <div class="div-color redHSL">Rojo HSL, 0º grados con 100% saturacion y 50% brillo</div><div class="div-example-colors"><span>background-color:hsl(0, 100%, 50%);</span></div>
+        <div class="div-color blueHSL">Azul HSL, 240º grados con 70% saturacion y 60% brillo</div><div class="div-example-colors"><span>background-color:hsl(240, 70%, 60%);</span></div>
+        <div class="div-color greenHSL">Verde HSL, 150º grados con 100% saturacion, 50% brillo y 50% opacidad</div><div class="div-example-colors"><span>background-color:hsl(150, 100%, 50%, 0.5);</span></div>
     </body>
 </html>
