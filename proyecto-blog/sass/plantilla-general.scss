@@ -1,22 +1,35 @@
+/*------------VARIABLES DEL PROGRAMA----------------*/
+/// 
+/////////////COLORES PARA EL PROGRAMA/////////////
 $bg-color:#DAE8FD;
 $header-bg-color-primary:rgba(174,0,255,1) 20%;
 $header-bg-color-secondary:rgba(9,122,252,1) 100%;
+////////////////////////////////////////////////////
 
+/////////////TAMAÑO IMAGENES HEADER/////////////////
 $width-min-img:4rem;
 $height-min-img:4rem;
 
 $width-max-img:8rem;
 $height-max-img:8rem;
+////////////////////////////////////////////////////
 
+
+/////////////FUENTES PARA EL PROGRAMA/////////////////
+/*Fuente para el Título o H1*/
 @font-face {
     font-family: "designer";
     src: url(/srcs/fonts/designer/Designer.otf);
 }
+////////////////////////////////////////////////////
+
 
 
 body{
     background-color: $bg-color;
     margin: 0rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
@@ -50,4 +63,22 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.nav-list{
+    width: fit-content;
+    // list-style: ;
+
+    li:first-child{
+        border-top: solid white 2px;
+    }
+
+    li{
+        border-bottom: solid white 2px;
+
+        img{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
 }

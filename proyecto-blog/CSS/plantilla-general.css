@@ -1,3 +1,4 @@
+/*------------VARIABLES DEL PROGRAMA----------------*/
 @font-face {
   font-family: "designer";
   src: url(/srcs/fonts/designer/Designer.otf);
@@ -5,6 +6,8 @@
 body {
   background-color: #DAE8FD;
   margin: 0rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -32,4 +35,19 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.nav-list {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.nav-list li:first-child {
+  border-top: solid white 2px;
+}
+.nav-list li {
+  border-bottom: solid white 2px;
+}
+.nav-list li img {
+  width: 1rem;
+  height: 1rem;
 }/*# sourceMappingURL=plantilla-general.css.map */
