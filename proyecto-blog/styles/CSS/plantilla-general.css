@@ -13,10 +13,9 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  opacity: 1;
   z-index: -3;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  filter: blur(3px);
 }
 
 body {
@@ -31,6 +30,13 @@ body {
   display: flex;
   width: 100%;
   position: fixed;
+  justify-content: center;
+}
+
+.footer {
+  background-image: linear-gradient(180deg, rgb(174, 0, 255) 20%, rgb(9, 122, 252) 100%);
+  display: flex;
+  width: 100%;
   justify-content: center;
 }
 
@@ -69,13 +75,12 @@ body {
 }
 
 #btnAbrirMenu {
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
   display: flex;
   justify-content: center;
+  opacity: 0.84;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: solid black 1px;
@@ -94,7 +99,6 @@ body {
 }
 
 .nav {
-  width: -moz-fit-content;
   width: fit-content;
   height: 100dvh;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
@@ -102,7 +106,7 @@ body {
   visibility: hidden;
   position: fixed;
   background-color: #393939;
-  transition: transform 0.5s ease; /* Define la duración y el tipo de transición */
+  transition: transform 0.5s ease;
   transform: translateX(-100%);
 }
 
@@ -113,7 +117,6 @@ body {
 }
 
 .nav-list {
-  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   right: 1.7rem;
@@ -138,48 +141,4 @@ body {
 .nav-list li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
-}
-
-.section {
-  margin-top: 12rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
-.section div {
-  width: 80vw;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: white;
-  border-radius: 3rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  flex-direction: column;
-}
-.section div img {
-  width: 100%;
-  height: 10vh;
-  border-top-left-radius: inherit;
-  border-top-right-radius: inherit;
-}
-.section div hr {
-  width: 100%;
-  height: 0.4rem;
-  background-color: black;
-  margin: 0;
-}
-.section div .title-article {
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-}
-.section div .date-article, .section div .creator-article {
-  padding-left: 0.5rem;
-}
-.section div .creator-article {
-  color: #979696;
-}
-.section div .creator-article b {
-  color: black;
 }/*# sourceMappingURL=plantilla-general.css.map */
