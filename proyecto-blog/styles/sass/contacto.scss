@@ -1,36 +1,116 @@
-$bg-formulario:#393939;
+$bg-formulario:#0156b8;
+$padding-left-text-form:1rem;
+
+@import url(../sass/plantilla-general.scss);
+
+@mixin titulo{
+    .titulo{
+        color: white;
+    }
+}
+
+@mixin btn-enviar{
+    .enviar{
+        width: 70vw;
+        height: 5vh;
+        background-color: rgb(0, 255, 0,0);
+        border-radius: 20rem;
+        color: white;
+        font-size: 1.4rem;
+
+    }
+
+    .enviar:hover{
+        background-color: white;
+        color: black;
+    }
+}
+
+
+@mixin datos-rellenar{
+    $contador: 0;
+    @each $name in nombre, correo, numero{
+        font-family: "";
+        @if $name == "numero" {
+            .#{$name} {
+                width: 70vw;
+                height: 5vh;
+                color: white;
+                background-color: $bg-formulario;
+                border-radius: 5rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                font-size: 1.5rem;
+                padding: .5rem;
+                transition:background-color ease-in 0.2s, background-color ease-in 0.2s;
+            }
+        } @else {
+            .#{$name} {
+                width: 70vw;
+                height: 5vh;
+                color:white;
+                background-color: $bg-formulario;
+                border-radius: 5rem;
+                font-size: 1.5rem;
+                padding: .5rem;
+
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                margin-bottom: 2rem;
+                transition: background-color ease-in 0.2s, color linear 0.1s;
+            }
+        }
+
+        .#{$name}:hover{
+            background-color: rgb(250, 250, 250);
+            color: black;
+            transition: background-color ease-out 0.6s, color linear 0.1s;
+        }
+
+        .#{$name}::placeholder{
+            color: rgb(107, 140, 179);
+            font-size: 2rem;
+            padding-left: $padding-left-text-form;
+        }
+
+        .#{$name}:hover::placeholder{
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+@mixin componentes(){
+    @include titulo();
+    @include datos-rellenar();
+    @include btn-enviar();
+}
+
 
 @mixin structure-form{
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include componentes();
 }
 
-@mixin componentes-form{
-    @each $name in nombre, correo, numero{
-        .#{$name} {
-            width: 19rem;
-            height: 4vh;
-            background-color: $bg-formulario;
-            border-radius: 5rem;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-            margin-bottom: 2rem;
-        }
-    } 
+@mixin estilo-formulario{
+    margin-top: 50%;
+    padding: 3rem 0.3rem 1rem 0.3rem;
+    background-color: $bg-formulario;
+    align-self: center;
+    height: fit-content;
+    width: 80%;
+    border-radius: 2rem;
 }
+
+
 
 
 
 .formulario-contact{
-    margin-top: 11rem;
-    background-color: $bg-formulario;
-    align-self: center;
-    height: 60vh;
-    width: 90%;
-
+    @include estilo-formulario();
+    
     .estructura-formulario{
         @include structure-form();
     }
-    
-    @include componentes-form();
-    border-radius: 3rem;
 }
 

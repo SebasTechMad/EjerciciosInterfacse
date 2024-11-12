@@ -152,6 +152,7 @@ body{
 .visible{
     opacity: 1;
     visibility: visible;
+    transition: transform 0.5s ease-out;
     transform: translateX(0);
 }
 
