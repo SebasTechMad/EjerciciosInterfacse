@@ -191,3 +191,91 @@ body{
     }
 }
 
+
+//---------ESTRUCTURA SCSS PARA TABLET-----------------//
+
+@mixin botones-abrircerrar-tablet{
+    #btnAbrirMenu{
+        display: none;
+    }
+
+    #btnCerrarMenu{
+        display: none;
+    }
+}
+
+@mixin nav-options-tablet{
+    .nav{
+        width: fit-content;
+        height: fit-content;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        background-color: white;
+        top: 6rem;
+        left: 2rem;
+        transition: none; 
+        transform: none;
+    }
+    
+    .nav-list{
+        width: fit-content;
+        position: relative;
+        right: 1.7rem;
+        
+    
+        li:first-child{
+            border-top: solid black 2px;
+        }
+    
+        li{
+            width: 100%;
+            border-bottom: solid black 2px;
+            display: flex;
+            align-items: center;
+            padding-top: .3rem;
+            padding-bottom: .3rem;
+            gap:2rem;
+            justify-content: space-between;
+    
+            img{
+                width: 3rem;
+                height: 3rem;
+            }
+    
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+@mixin nav-tablet{
+    @include botones-abrircerrar-tablet();
+    @include nav-options-tablet();
+}
+
+@mixin section-tablet{
+
+}
+
+
+@mixin componentes-tablet{
+    @include nav-tablet();
+    @include section-tablet();
+}
+
+
+@mixin estructura-tablet{
+    @include componentes-tablet();
+}
+//////////////////////////////////////////////////////
+
+
+//MEDIA QUERY PARA LA TABLET
+@media (min-width:600px) {
+    @include estructura-tablet();
+}
+

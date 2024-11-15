@@ -6,6 +6,7 @@ $padding-left-text-form:1rem;
 @mixin titulo{
     .titulo{
         color: white;
+        font-size: 4vh;
     }
 }
 
@@ -94,7 +95,7 @@ $padding-left-text-form:1rem;
 
 @mixin estilo-formulario{
     margin-top: 50%;
-    padding: 3rem 0.3rem 1rem 0.3rem;
+    padding: 1rem 0.7rem 2rem 0.7rem;
     background-color: $bg-formulario;
     align-self: center;
     height: fit-content;
