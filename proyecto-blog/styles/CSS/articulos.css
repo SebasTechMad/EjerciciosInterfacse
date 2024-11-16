@@ -8,6 +8,7 @@
 }
 .section div.info {
   width: 80vw;
+  height: -moz-fit-content;
   height: fit-content;
   background-color: white;
   border-radius: 3rem;
@@ -69,6 +70,7 @@
   .section div.info {
     width: 40vw;
     margin-right: 6rem;
+    height: -moz-fit-content;
     height: fit-content;
     background-color: white;
     border-radius: 3rem;

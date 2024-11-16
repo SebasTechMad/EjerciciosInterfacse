@@ -18,7 +18,6 @@ $padding-left-text-form:1rem;
         border-radius: 20rem;
         color: white;
         font-size: 1.4rem;
-
     }
 
     .enviar:hover{
@@ -103,10 +102,6 @@ $padding-left-text-form:1rem;
     border-radius: 2rem;
 }
 
-
-
-
-
 .formulario-contact{
     @include estilo-formulario();
     
@@ -114,4 +109,127 @@ $padding-left-text-form:1rem;
         @include structure-form();
     }
 }
+
+///----------------------------------------------------------------///
+
+@mixin estilo-formulario-tablet{
+    padding: 1rem 0.7rem 2rem 0.7rem;
+    background-color: $bg-formulario;
+    align-self: flex-end;
+
+    position: absolute;
+
+    bottom: 20vh;
+    right: 1vw;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2rem;
+}
+
+@mixin estilo-formulario-tablet-grande{
+    align-self: center;
+
+    position: absolute;
+
+    left: 45vw;
+    bottom: 20vh;
+    width: 40vw;
+    height: fit-content;
+    border-radius: 2rem;
+}
+
+@mixin datos-rellenar-tablet{
+    $contador: 0;
+    @each $name in nombre, correo, numero{
+        font-family: "";
+        @if $name == "numero" {
+            .#{$name} {
+                width: 30vw;
+                height: 5vh;
+                color: white;
+                background-color: $bg-formulario;
+                border-radius: 5rem;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                font-size: 1.5rem;
+                padding: .5rem;
+                transition:background-color ease-in 0.2s, background-color ease-in 0.2s;
+            }
+        } @else {
+            .#{$name} {
+                width: 30vw;
+                height: 5vh;
+                color:white;
+                background-color: $bg-formulario;
+                border-radius: 5rem;
+                font-size: 1.5rem;
+                padding: .5rem;
+
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                margin-bottom: 2rem;
+                transition: background-color ease-in 0.2s, color linear 0.1s;
+            }
+        }
+
+        .#{$name}:hover{
+            background-color: rgb(250, 250, 250);
+            color: black;
+            transition: background-color ease-out 0.6s, color linear 0.1s;
+        }
+
+        .#{$name}::placeholder{
+            color: rgb(107, 140, 179);
+            font-size: 2rem;
+            padding-left: $padding-left-text-form;
+        }
+
+        .#{$name}:hover::placeholder{
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+
+
+
+@mixin esctructura-tablet{
+    .formulario-contact{
+        @include estilo-formulario-tablet();
+
+        .estructura-formulario{
+            @include datos-rellenar-tablet();
+
+            .enviar{
+                width: 20vw;
+            }
+        }
+    }
+}
+
+@mixin esctructura-tablet-grande{
+    .formulario-contact{
+        @include estilo-formulario-tablet-grande();
+
+        .estructura-formulario{
+            @include datos-rellenar-tablet();
+
+            .enviar{
+                width: 20vw;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width:600px) and (max-width:729px) {
+    @include esctructura-tablet();
+}
+
+@media (min-width:730px) and (max-width:1024px) {
+    @include esctructura-tablet-grande();
+}
+
+
 
