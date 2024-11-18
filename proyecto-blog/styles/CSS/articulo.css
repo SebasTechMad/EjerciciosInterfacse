@@ -11,7 +11,6 @@ header {
   background-image: linear-gradient(180deg, rgb(174, 0, 255) 20%, rgb(9, 122, 252) 100%);
   color: #fff;
   width: 100dvw;
-  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
   position: fixed;
@@ -32,6 +31,9 @@ main {
   padding: 20px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main :not(h1, h2) {
+  font-family: "tommy";
 }
 main h1, main h2 {
   color: #1a1a1a;

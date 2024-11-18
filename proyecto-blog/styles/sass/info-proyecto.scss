@@ -26,6 +26,7 @@ $text-color-div:#000;
             .div#{$i}{
                 display: flex;
                 flex-direction: row;
+                margin-bottom: 2rem;
         
                 width: 80%;
                 border-radius: .5rem;

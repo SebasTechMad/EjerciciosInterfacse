@@ -14,8 +14,7 @@
   height: 100%;
   position: fixed;
   z-index: -3;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: blur(3px);
 }
 
@@ -90,9 +89,7 @@ body {
 }
 
 #btnAbrirMenu {
-  width: -moz-fit-content;
   width: fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
   display: flex;
@@ -116,7 +113,6 @@ body {
 }
 
 .nav {
-  width: -moz-fit-content;
   width: fit-content;
   height: 100dvh;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
@@ -143,7 +139,6 @@ body {
 }
 
 .nav-list {
-  width: -moz-fit-content;
   width: fit-content;
   position: relative;
   right: 1.7rem;
@@ -170,7 +165,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   #btnAbrirMenu {
     display: none;
   }
@@ -178,23 +173,20 @@ body {
     display: none;
   }
   .nav {
-    width: -moz-fit-content;
     width: fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     box-shadow: none;
     opacity: 1;
     visibility: visible;
     position: fixed;
     background-color: white;
-    top: 35vh;
+    top: 20vh;
     left: 2rem;
     transition: none;
     transform: none;
     border-radius: 0.5rem;
   }
   .nav-list {
-    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     right: 1.7rem;
@@ -223,10 +215,15 @@ body {
   }
 }
 @media (min-width: 1025px) {
+  #btnAbrirMenu {
+    display: none;
+  }
+  #btnCerrarMenu {
+    display: none;
+  }
   .nav {
     display: flex;
     flex-direction: column;
-    width: -moz-fit-content;
     width: fit-content;
     height: 2rem;
     box-shadow: none;
@@ -238,21 +235,23 @@ body {
     left: 2rem;
     border-radius: 0rem;
     padding: 1rem;
-    transition: none;
     transform: none;
+    transition: height 0.2s ease-out;
   }
   .nav .title-menu {
     display: inline;
   }
   .nav .nav-list {
+    opacity: 0;
     visibility: hidden;
+    transition: opacity linear 0.4s;
   }
   .nav:hover {
     border-radius: 0.5rem;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 24rem;
   }
   .nav:hover .nav-list {
+    opacity: 1;
     visibility: visible;
   }
 }/*# sourceMappingURL=plantilla-general.css.map */

@@ -44,6 +44,10 @@ main {
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+  :not(h1, h2){
+    font-family: "tommy";
+  }
+
   h1, h2 {
     color: darken($text-color, 10%);
   }
