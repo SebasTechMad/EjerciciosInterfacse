@@ -38,7 +38,21 @@ body {
   background-image: linear-gradient(180deg, rgb(174, 0, 255) 20%, rgb(9, 122, 252) 100%);
   display: flex;
   width: 100%;
+  height: 8rem;
   justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer img {
+  width: 7rem;
+}
+.footer .suscribe {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.footer .suscribe a {
+  color: inherit;
 }
 
 .header-img {
@@ -112,6 +126,13 @@ body {
   background-color: #393939;
   transition: transform 0.5s ease;
   transform: translateX(-100%);
+}
+.nav .title-menu {
+  display: none;
+  color: white;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.4rem;
 }
 
 .visible {
@@ -199,5 +220,39 @@ body {
     text-decoration: none;
     color: black;
     font-size: 2rem;
+  }
+}
+@media (min-width: 1025px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 2rem;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    background-color: rgb(9, 122, 252);
+    top: 12vh;
+    left: 2rem;
+    border-radius: 0rem;
+    padding: 1rem;
+    transition: none;
+    transform: none;
+  }
+  .nav .title-menu {
+    display: inline;
+  }
+  .nav .nav-list {
+    visibility: hidden;
+  }
+  .nav:hover {
+    border-radius: 0.5rem;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .nav:hover .nav-list {
+    visibility: visible;
   }
 }/*# sourceMappingURL=plantilla-general.css.map */

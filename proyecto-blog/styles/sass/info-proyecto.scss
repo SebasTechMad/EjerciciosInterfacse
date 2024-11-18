@@ -1,0 +1,100 @@
+// .main{
+//     position: absolute;
+//     top: 10vh;
+//     left: 50vw;
+//     width: 50%;
+//     height: fit-content;
+//     display: flex;
+//     justify-self: center;
+
+
+//     flex-direction: column;
+//     justify-content: end;
+
+//     img{
+//         width: 30vh;
+//     }
+// }
+
+$text-color:#fff;
+$bg-div-color:#fff;
+$text-color-div:#000;
+
+@mixin for-divs{
+    @for $i from 1 through 3{
+        @if($i == 3){
+            .div#{$i}{
+                display: flex;
+                flex-direction: row;
+        
+                width: 80%;
+                border-radius: .5rem;
+                justify-content: space-between;
+                background-color: $bg-div-color;
+        
+                h3{
+                    color: $text-color-div;
+                    font-size: 1.7rem;
+                }
+            }
+            img{
+                width:6rem;
+        }
+        }@else{
+            .div#{$i}{
+                display: flex;
+                flex-direction: row;
+        
+                width: 80%;
+                border-radius: .5rem;
+                justify-content: space-between;
+                background-color: $bg-div-color;
+                margin-bottom: 1rem;
+        
+                h3{
+                    color: $text-color-div;
+                    font-size: 2rem;
+                }
+            }
+            img{
+                width: 5rem;
+            }
+        }
+    }
+}
+
+
+    
+
+.main{
+    margin-top: 10rem;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    color: $text-color;
+
+
+    flex-direction: column;
+    @include for-divs();
+}
+
+@media (min-width:600px) {
+    .main{
+        width: 50%;
+        align-self: end;
+
+        @for $i from 1 through 3{
+            .div#{$i}{
+                img{
+                    width: 10vw;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1025px){
+    .main{
+        align-self: center;
+    }
+}

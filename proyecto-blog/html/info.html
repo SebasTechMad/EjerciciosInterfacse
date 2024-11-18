@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../styles/CSS/plantilla-general.css">
-        <link rel="stylesheet" href="../styles/CSS/contacto.css">
+        <link rel="stylesheet" href="../styles/CSS/info-proyecto.css">
     </head>
     <body>
         <video muted autoplay loop class="video">
@@ -13,13 +13,12 @@
             type="video/mp4">
         </video>
 
-
         <header class="header">
             <!-- LOGO -->
              <div class="header-img"></div>
              <!-- TITULO -->
               <div class="header-title">
-                <h1>CONTACTO</h1>
+                <h1>INFORMACION</h1>
               </div>
         </header>
 
@@ -56,17 +55,26 @@
             </ul>
         </nav>
 
-        <form class="formulario-contact">
-            <div class="estructura-formulario">
-                <h1 class="titulo">RELLENAR DATOS</h1>
-                <input id="txtNombre" placeholder="Nombre" type="text" class="nombre"><br>
-                <input id="txtCorreo" placeholder="Correo" type="text" class="correo"><br>
-                <input id="txtNumero" type="text" placeholder="Numero" class="numero"><br>
-                <button class="enviar" type="submit">Enviar</button>
+        <main class="main">
+            <img src="../srcs/images/sobre-mi_srip.png" alt="">
+            <h2>¡Hola! Soy Juan Sebastián, el <br>creador de este proyecto</h2>
+            <h2>¿Como he pensado este proyecto?</h2>
+            <div class="div1" id="prototipo">
+                <h3>Prototipo</h3>
+                <img src="../srcs/images/pdf-vectorspoint.png" alt="">
             </div>
-        </form>
+            <div class="div2" id="reflexion">
+                <h3>Reflexión</h3>
+                <img src="../srcs/images/pdf-vectorspoint.png" alt="">
+            </div>
+            <div class="div3" id="guiaEstilo">
+                <h3>Guía de estilo</h3>
+                <img src="../srcs/images/pdf-vectorspoint.png" alt="">
+            </div>
+        </main>
 
 
         <script src="../js/index.js"></script>
+        <script src="../js/sobremi.js"></script>
     </body>
 </html>

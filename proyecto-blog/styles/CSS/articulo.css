@@ -1,1 +1,118 @@
-/*# sourceMappingURL=articulo.css.map */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #DAE8FD;
+  color: #333;
+}
+
+header {
+  background-image: linear-gradient(180deg, rgb(174, 0, 255) 20%, rgb(9, 122, 252) 100%);
+  color: #fff;
+  width: 100dvw;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  position: fixed;
+  top: 0%;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+header a {
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 20vh;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+main h1, main h2 {
+  color: #1a1a1a;
+}
+main ul {
+  padding-left: 20px;
+}
+main ul li {
+  margin-bottom: 10px;
+}
+main p {
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table th, table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+table th {
+  background-color: rgb(9, 122, 252) 100%;
+  font-weight: bold;
+}
+table td {
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.9em;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 5px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  main {
+    padding: 15px;
+  }
+  main h2 {
+    font-size: 1.2rem;
+  }
+  main ul {
+    padding-left: 15px;
+  }
+  main p {
+    font-size: 0.9rem;
+  }
+  table th, table td {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+  main {
+    padding: 10px;
+  }
+  main h2 {
+    font-size: 1rem;
+  }
+  main ul {
+    padding-left: 10px;
+  }
+  main p {
+    font-size: 0.8rem;
+  }
+  table th, table td {
+    font-size: 0.7rem;
+    padding: 5px;
+  }
+}/*# sourceMappingURL=articulo.css.map */

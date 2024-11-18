@@ -1,10 +1,11 @@
 const nav = document.querySelector(".nav");
 const abrir = document.querySelector("#btnAbrirMenu");
 const cerrar = document.querySelector("#btnCerrarMenu");
-
 const articulos = document.getElementsByClassName("info");
+const img_info = document.getElementById("imgInfoProyecto");
 
-console.log(articulos);
+
+
 
 //EVENTOS PARA MENÚ HAMBURGUESA
 abrir.addEventListener("click", () =>{
@@ -20,12 +21,13 @@ cerrar.addEventListener("click", () =>{
 
 for (const articulo of articulos) {
      articulo.addEventListener("click", () =>{
-        //location.href = `./articulos/${articulo.id}.html`;
         location.href = "articulos/"+articulo.id+".html";
      });
   }
 
+img_info.addEventListener("click",() =>{
+    location.href ="./info.html";
+});
 
-//EVENTO ARTICULOS
 
 

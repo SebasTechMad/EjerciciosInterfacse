@@ -116,11 +116,11 @@ $padding-left-text-form:1rem;
     padding: 1rem 0.7rem 2rem 0.7rem;
     background-color: $bg-formulario;
     align-self: flex-end;
+    margin-top: 30%;
 
     position: absolute;
 
-    bottom: 20vh;
-    right: 1vw;
+    right: 3vw;
     width: fit-content;
     height: fit-content;
     border-radius: 2rem;
@@ -128,11 +128,13 @@ $padding-left-text-form:1rem;
 
 @mixin estilo-formulario-tablet-grande{
     align-self: center;
+    z-index: -3;
 
     position: absolute;
 
     left: 45vw;
-    bottom: 20vh;
+    // bottom: 20vh;
+    margin-top: 10%;
     width: 40vw;
     height: fit-content;
     border-radius: 2rem;
@@ -223,13 +225,18 @@ $padding-left-text-form:1rem;
 
 
 
-@media (min-width:600px) and (max-width:729px) {
+@media (min-width:600px) and (max-width:949px) {
     @include esctructura-tablet();
 }
 
-@media (min-width:730px) and (max-width:1024px) {
+@media (min-width:950px) and (max-width:1024px) {
     @include esctructura-tablet-grande();
 }
 
+@media (min-width:950px) and (min-height:900px){
+    .formulario-contact{
+        margin-top: 20%;
+    }
+}
 
 

@@ -61,7 +61,25 @@ body{
     background-image: linear-gradient(180deg, $header-bg-color-primary, $header-bg-color-secondary);
     display: flex;
     width: 100%;
+    height: 8rem;
     justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    img{
+        width: 7rem;
+    }
+
+    .suscribe{
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        a{
+            color: inherit;
+        }
+    }
+
 }
 
 .header-img{
@@ -138,6 +156,14 @@ body{
 
 
 .nav{
+    .title-menu{
+        display: none;
+        color: white;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.4rem;
+    }
+
     width: fit-content;
     height: 100dvh;
     box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
@@ -278,7 +304,47 @@ body{
 
 
 //MEDIA QUERY PARA LA TABLET
-@media (min-width:600px) {
+@media (min-width:600px){
     @include estructura-tablet();
+}
+
+@media (min-width:1025px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: 2rem;
+        box-shadow: none;
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        background-color: rgba(9,122,252,1);
+        top: 12vh;
+        left: 2rem;
+        border-radius: 0rem;
+        padding: 1rem;
+
+        .title-menu{
+            display: inline;
+        }
+
+        .nav-list{
+            visibility: hidden;
+        }
+
+        transition: none; 
+        transform: none;
+
+
+    }
+
+    .nav:hover{
+        border-radius: .5rem;
+        height: fit-content;
+
+        .nav-list{
+            visibility: visible;
+        }
+    }
 }
 
