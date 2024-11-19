@@ -4,6 +4,7 @@
   padding: 1rem 0.7rem 2rem 0.7rem;
   background-color: #0156b8;
   align-self: center;
+  height: -moz-fit-content;
   height: fit-content;
   width: 80%;
   border-radius: 2rem;
@@ -38,10 +39,18 @@
   color: black;
   transition: background-color ease-out 0.6s, color linear 0.1s;
 }
+.formulario-contact .estructura-formulario .nombre::-moz-placeholder {
+  color: rgb(107, 140, 179);
+  font-size: 2rem;
+  padding-left: 1rem;
+}
 .formulario-contact .estructura-formulario .nombre::placeholder {
   color: rgb(107, 140, 179);
   font-size: 2rem;
   padding-left: 1rem;
+}
+.formulario-contact .estructura-formulario .nombre:hover::-moz-placeholder {
+  color: rgb(0, 0, 0);
 }
 .formulario-contact .estructura-formulario .nombre:hover::placeholder {
   color: rgb(0, 0, 0);
@@ -64,10 +73,18 @@
   color: black;
   transition: background-color ease-out 0.6s, color linear 0.1s;
 }
+.formulario-contact .estructura-formulario .correo::-moz-placeholder {
+  color: rgb(107, 140, 179);
+  font-size: 2rem;
+  padding-left: 1rem;
+}
 .formulario-contact .estructura-formulario .correo::placeholder {
   color: rgb(107, 140, 179);
   font-size: 2rem;
   padding-left: 1rem;
+}
+.formulario-contact .estructura-formulario .correo:hover::-moz-placeholder {
+  color: rgb(0, 0, 0);
 }
 .formulario-contact .estructura-formulario .correo:hover::placeholder {
   color: rgb(0, 0, 0);
@@ -90,16 +107,25 @@
   color: black;
   transition: background-color ease-out 0.6s, color linear 0.1s;
 }
+.formulario-contact .estructura-formulario .numero::-moz-placeholder {
+  color: rgb(107, 140, 179);
+  font-size: 2rem;
+  padding-left: 1rem;
+}
 .formulario-contact .estructura-formulario .numero::placeholder {
   color: rgb(107, 140, 179);
   font-size: 2rem;
   padding-left: 1rem;
+}
+.formulario-contact .estructura-formulario .numero:hover::-moz-placeholder {
+  color: rgb(0, 0, 0);
 }
 .formulario-contact .estructura-formulario .numero:hover::placeholder {
   color: rgb(0, 0, 0);
 }
 .formulario-contact .estructura-formulario .enviar {
   width: 10rem;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 0.5rem;
   background-color: rgba(0, 255, 0, 0);
@@ -120,7 +146,9 @@
     margin-top: 30%;
     position: absolute;
     right: 3vw;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     border-radius: 2rem;
   }
@@ -146,10 +174,18 @@
     color: black;
     transition: background-color ease-out 0.6s, color linear 0.1s;
   }
+  .formulario-contact .estructura-formulario .nombre::-moz-placeholder {
+    color: rgb(107, 140, 179);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
   .formulario-contact .estructura-formulario .nombre::placeholder {
     color: rgb(107, 140, 179);
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .formulario-contact .estructura-formulario .nombre:hover::-moz-placeholder {
+    color: rgb(0, 0, 0);
   }
   .formulario-contact .estructura-formulario .nombre:hover::placeholder {
     color: rgb(0, 0, 0);
@@ -171,10 +207,18 @@
     color: black;
     transition: background-color ease-out 0.6s, color linear 0.1s;
   }
+  .formulario-contact .estructura-formulario .correo::-moz-placeholder {
+    color: rgb(107, 140, 179);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
   .formulario-contact .estructura-formulario .correo::placeholder {
     color: rgb(107, 140, 179);
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .formulario-contact .estructura-formulario .correo:hover::-moz-placeholder {
+    color: rgb(0, 0, 0);
   }
   .formulario-contact .estructura-formulario .correo:hover::placeholder {
     color: rgb(0, 0, 0);
@@ -195,10 +239,18 @@
     color: black;
     transition: background-color ease-out 0.6s, color linear 0.1s;
   }
+  .formulario-contact .estructura-formulario .numero::-moz-placeholder {
+    color: rgb(107, 140, 179);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
   .formulario-contact .estructura-formulario .numero::placeholder {
     color: rgb(107, 140, 179);
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .formulario-contact .estructura-formulario .numero:hover::-moz-placeholder {
+    color: rgb(0, 0, 0);
   }
   .formulario-contact .estructura-formulario .numero:hover::placeholder {
     color: rgb(0, 0, 0);
@@ -215,6 +267,7 @@
     left: 45vw;
     margin-top: 10%;
     width: 40vw;
+    height: -moz-fit-content;
     height: fit-content;
     border-radius: 2rem;
   }
@@ -240,10 +293,18 @@
     color: black;
     transition: background-color ease-out 0.6s, color linear 0.1s;
   }
+  .formulario-contact .estructura-formulario .nombre::-moz-placeholder {
+    color: rgb(107, 140, 179);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
   .formulario-contact .estructura-formulario .nombre::placeholder {
     color: rgb(107, 140, 179);
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .formulario-contact .estructura-formulario .nombre:hover::-moz-placeholder {
+    color: rgb(0, 0, 0);
   }
   .formulario-contact .estructura-formulario .nombre:hover::placeholder {
     color: rgb(0, 0, 0);
@@ -265,10 +326,18 @@
     color: black;
     transition: background-color ease-out 0.6s, color linear 0.1s;
   }
+  .formulario-contact .estructura-formulario .correo::-moz-placeholder {
+    color: rgb(107, 140, 179);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
   .formulario-contact .estructura-formulario .correo::placeholder {
     color: rgb(107, 140, 179);
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .formulario-contact .estructura-formulario .correo:hover::-moz-placeholder {
+    color: rgb(0, 0, 0);
   }
   .formulario-contact .estructura-formulario .correo:hover::placeholder {
     color: rgb(0, 0, 0);
@@ -289,10 +358,18 @@
     color: black;
     transition: background-color ease-out 0.6s, color linear 0.1s;
   }
+  .formulario-contact .estructura-formulario .numero::-moz-placeholder {
+    color: rgb(107, 140, 179);
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
   .formulario-contact .estructura-formulario .numero::placeholder {
     color: rgb(107, 140, 179);
     font-size: 2rem;
     padding-left: 1rem;
+  }
+  .formulario-contact .estructura-formulario .numero:hover::-moz-placeholder {
+    color: rgb(0, 0, 0);
   }
   .formulario-contact .estructura-formulario .numero:hover::placeholder {
     color: rgb(0, 0, 0);
@@ -303,6 +380,7 @@
 }
 @media (min-width: 1025px) {
   .formulario-contact {
+    width: -moz-fit-content;
     width: fit-content;
     padding: 1rem;
     margin-top: 14%;
@@ -310,6 +388,7 @@
 }
 @media (min-width: 950px) and (min-height: 900px) {
   .formulario-contact {
+    width: -moz-fit-content;
     width: fit-content;
     margin-top: 20%;
   }
