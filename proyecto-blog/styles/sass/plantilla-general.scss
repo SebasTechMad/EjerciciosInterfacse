@@ -65,6 +65,7 @@ body{
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+    color: white;
 
     img{
         width: 7rem;
@@ -239,7 +240,7 @@ body{
         visibility: visible;
         position: fixed;
         background-color: white;
-        top: 20vh;
+        top: 35vh;
         left: 2rem;
         transition: none; 
         transform: none;
@@ -286,8 +287,14 @@ body{
     @include nav-options-tablet();
 }
 
+@mixin section-tablet{
+
+}
+
+
 @mixin componentes-tablet{
     @include nav-tablet();
+    @include section-tablet();
 }
 
 
@@ -298,7 +305,7 @@ body{
 
 
 //MEDIA QUERY PARA LA TABLET
-@media (min-width:600px) and (max-width:1024px){
+@media (min-width:600px){
     @include estructura-tablet();
 }
 
@@ -330,7 +337,7 @@ body{
         padding: 1rem;
 
         transform: none;
-        transition: height 0.2s ease-out;
+        transition: height 0.4s ease-out;
 
         .title-menu{
             display: inline;
@@ -339,13 +346,13 @@ body{
         .nav-list{
             opacity: 0;
             visibility: hidden;
-            transition: opacity linear .4s;
+            transition: opacity ease-out 1.8s;
         }
     }
 
     .nav:hover{
         border-radius: .5rem;
-        height: 24rem;
+        height: 22rem;
 
         .nav-list{
             opacity: 1;
@@ -353,3 +360,4 @@ body{
         }
     }
 }
+

@@ -1,5 +1,6 @@
 .main {
   margin-top: 10rem;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   align-items: center;

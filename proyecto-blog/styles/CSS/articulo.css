@@ -11,6 +11,7 @@ header {
   background-image: linear-gradient(180deg, rgb(174, 0, 255) 20%, rgb(9, 122, 252) 100%);
   color: #fff;
   width: 100dvw;
+  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
   position: fixed;
