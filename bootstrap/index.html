@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./srcs/Bootstrap_logo.svg" type="image/x-icon">
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./styles/estilos.css">
+        <script src="./js/index.js"></script>
         <title>Home de ejemplos</title>
     </head>
     <body>
@@ -12,12 +15,47 @@
         -LIST GROUPS
         -FORM VALIDATION -->
 
-        <header class="container-fluid bg-success">
-            <p class="h1 text-light text-center p-3">BOOTSTRAP</p>
+        <header class="container-fluid col-12 fondo-header">
+            <nav class="navbar navbar-expand-sm">
+                <p class="navbar-brand h1 text-light text-center p-3">BOOTSTRAP</p>
+                <!-- <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-light">NAVBAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-light">LIST GROUPS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link text-light">FORM VALIDATION</a>
+                    </li>
+                </ul> -->
+            </nav>
         </header>
 
-        <main>
+        <main class="container d-flex flex-row flex-wrap justify-content-center gap-5 mt-5">
+            <article class="col-sm-8 col-md-4 col-lg-3" onclick="redirigir1()">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.png" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">NAVBAR</h4>
+                </div>
+            </article>
             
+            <article class="col-sm-8 col-md-4 col-lg-3" onclick="redirigir2()">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.png" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4>LIST GROUPS</h4>
+                </div>
+            </article>
+            
+            <article class="col-sm-8 col-md-4 col-lg-3" onclick="redirigir3()">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.png" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4>FORM VALIDATION</h4>
+                </div>
+            </article>
         </main>
     </body>
 </html>
