@@ -12,3 +12,7 @@
   .fondo-header{
       background-color: rgb(119, 0, 255);
   }
+
+  html{
+    font-size: 20px;
+  }
