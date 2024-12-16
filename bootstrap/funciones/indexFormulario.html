@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Navbar</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../srcs/Bootstrap_logo.svg" type="image/x-icon">
@@ -11,11 +10,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../styles/estilos.css">
         <script src="./js/index.js"></script>
-        <title>Home de ejemplos</title>
+        <title>validacion de formulario</title>
     </head>
     <body>
         <header class="container-fluid col-12 fixed-top fondo-header">
-            
             <nav class="navbar navbar-expand-sm navbar-dark">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -25,122 +23,78 @@
                 </div>
                 <ul class="navbar-nav collapse navbar-collapse" id="collapsibleNavbar">
                     <li class="nav-item">
-                        <a href="./indexNavs.html" class="nav-link disabled">NAVBAR</a>
+                        <a href="./indexNavs.html" class="nav-link">NAVBAR</a>
                     </li>
                     <li class="nav-item">
                         <a href="./indexListGroups.html" class="nav-link">LIST GROUPS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./indexNavs.html" class="nav-link">FORM VALIDATION</a>
+                        <a href="./indexNavs.html" class="nav-link disabled">FORM VALIDATION</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        
+        <br><br>
+        
+        <main class="container">
+            <section class="mt-4 col-6">
+                <article>
+                    <h1>Form validation</h1>
+                    <span>A la hora de validar un formulario, es común validar los datos antes y después de que 
+                    el servidor empiece a procesar la información. <br><br> Para ello tenemos que comprobar si el usuario
+                    está introduciendo la información correcta o si está rellenando la información necesaria para
+                    que el servidor pueda procesar todos los datos de manera correcta.</span>
+                </article>
+                <br>
+                <article class="mt-4">
+                    <form class="rounded-4 shadow-lg p-3 was-validated">
 
-        <main>
-            <section>
-                <div class="container mt-5">
-                    <article>
-                        <br>
-                        <h1>Navbar</h1><br>
-                        <span>Los navbar son un elemento muy importante a la hora de navegar, para que el usuario
-                        no se pierda en ningún momento de la página web. Al utilizar <b>Bootstrap</b>, los Navbar se 
-                        pueden hacer de manera sencilla y profesional. En este artículo veremos cómo hacer algunos
-                        ejemplos.</span>
-                    </article>
-
-                    <h1 class="mt-5">Ejemplo Navbar básico</h1>
-                    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-5">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">
-                                <img src="../srcs/Bootstrap_logo.png" style="width: 4rem;" alt="">
-                            </a>
-                            <div>
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Activo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">ejemplo1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">ejemplo2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled" href="#">Desactivado</a>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="mb-3">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                          <div class="valid-feedback">Valido</div>
+                          <div class="invalid-feedback">Introduce tu nombre</div>
                         </div>
-                    </nav>
 
-                    <article class="col-6">
-                        <p>Los componentes de un navbar se pueden dividir en:</p>
-                        <span class="h5">Logo: </span><span>Es el logo o imagen de la página web que pondremos en la navbar. Para ello
-                        utilizaremos la clase <code>navbar-brand</code>. Da igual la imagen que tengamos, con que controlemos el tamaño horizontalmente
-                        <b>Bootstrap controlará el tamaño verticalmente.</b></span><br><br>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Correo Electrónico</label>
+                          <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                          <div class="valid-feedback">Valido</div>
+                          <div class="invalid-feedback">Introduce tu correo</div>
+                        </div>
 
-                        <span class="h5">Activo: </span><span>Este es un tipo de link que le <b>cambia el estilo y lo deja brillando constantemente.</b> Para poner
-                        este código tendríamos que poner lo siguiente: <code>nav-link active</code>.
-                        </span><br><br>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                          <div class="valid-feedback">Valido</div>
+                          <div class="invalid-feedback">Introduce tu contraseña</div>
+                        </div>
 
-                        <span class="h5">disabled: </span><span>Este es un tipo de link que le <b>cambia el estilo y lo deja deshabilitado constantemente.</b> Para poner
-                            este código tendríamos que poner lo siguiente: <code>nav-link disabled</code>.
-                        </span><br><br>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="terminos" required>
+                          <label class="form-check-label" for="terminos">Aceptar términos y condiciones</label>
+                          <div class="invalid-feedback">Tienes que aceptar los terminos</div>
+                        </div>
 
-                        <span class="h5">Normal: </span><span>Este es un tipo de link que le <b>cambia el estilo dependiendo si pasas encima de el o no.</b> Para poner
-                            este código tendríamos que poner lo siguiente: <code>nav-link</code>.
-                        </span><br><br><br>
-                    </article>
-
-                    <article>
-                        <h1>Estructura de un navbar</h1><br>
-                        <img src="../srcs/trozo-code.png" alt="">
-                    </article>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                      </form>
+                </article>
+                <br><br>
+                <article>
+                    <span>Para poder darle este tipo de efectos, simplemente en el formulario tenemos
+                    que poner la clase <code>was-validated</code> y te dará el formato. <br><br> Si quieres poner mensajes 
+                    personalizados, tienes que poner un div con clases <code>valid-feedback</code> e <code>invalid-feedback</code>.</span>
+                </article>
+                <br>
+                <article>
+                    <h1>Ejemplos</h1>
+                    <br>
+                    <img src="../srcs/form-validated.png" class="w-100">
+                    <br><br>
+                    <img src="../srcs/div-valid-invalid.png" class="w-100" alt="">
                     <br><br><br>
-
-                    <article>
-                        <h1>Más elementos</h1>
-                        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-5">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">
-                                    <img src="../srcs/Bootstrap_logo.png" style="width: 4rem;" alt="">
-                                </a>
-                                <div>
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Activo</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">ejemplo1</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">ejemplo2</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link disabled" href="#">Desactivado</a>
-                                        </li>
-
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-                                            <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="#">primero</a></li>
-                                              <li><a class="dropdown-item" href="#">segundo</a></li>
-                                              <li><a class="dropdown-item" href="#">tercero</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <form class="d-flex">
-                                            <input class="form-control me-2" type="text" placeholder="buscar">
-                                            <button class="btn btn-primary" type="button">buscar</button>
-                                          </form>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                        <br><br><br>
-                    </article>
-                </div>
+                </article>
             </section>
         </main>
     </body>
