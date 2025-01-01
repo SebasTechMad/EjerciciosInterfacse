@@ -5,11 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./srcs/Bootstrap_logo.svg" type="image/x-icon">
         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./styles/estilos.css">
+        <link rel="stylesheet" href="./styles/CSS/index.css">
         <script src="./js/index.js"></script>
         <title>Home de ejemplos</title>
     </head>
-    <body>
+    <body onload="loadPages()">
         <!-- TODO HACER
         -NAVBAR
         -LIST GROUPS
@@ -17,12 +17,12 @@
 
         <header class="container-fluid col-12 fondo-header">
             <nav class="navbar navbar-expand-sm">
-                <p class="navbar-brand h1 text-light text-center p-3">BOOTSTRAP</p>
+                <p class="h1 text-light text-center p-2">BOOTSTRAP</p>
             </nav>
         </header>
 
         <main class="container d-flex flex-row flex-wrap justify-content-center gap-5 mt-5">
-            <article class="col-sm-8 col-md-4 col-lg-3" onclick="redirigir1()">
+            <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                     <img src="./srcs/Bootstrap_logo.png" class="w-100">
                     <hr class="text-dark col-12">
@@ -30,7 +30,7 @@
                 </div>
             </article>
             
-            <article class="col-sm-8 col-md-4 col-lg-3" onclick="redirigir2()">
+            <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                     <img src="./srcs/Bootstrap_logo.png" class="w-100">
                     <hr class="text-dark col-12">
@@ -38,7 +38,7 @@
                 </div>
             </article>
             
-            <article class="col-sm-8 col-md-4 col-lg-3" onclick="redirigir3()">
+            <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                     <img src="./srcs/Bootstrap_logo.png" class="w-100">
                     <hr class="text-dark col-12">

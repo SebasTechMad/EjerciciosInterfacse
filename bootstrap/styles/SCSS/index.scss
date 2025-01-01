@@ -1,0 +1,21 @@
+
+
+html{
+    font-size: 20px;
+
+  .animar{
+    cursor: pointer;
+    transform: scale(1); 
+    transition: transform 0.3s ease-in-out;
+  }
+  .animar:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .fondo-header{
+      background-color: rgb(119, 0, 255);
+  }
+}
+
+  

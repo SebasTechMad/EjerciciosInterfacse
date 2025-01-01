@@ -1,0 +1,15 @@
+html {
+  font-size: 20px;
+}
+html .animar {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+html .animar:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+html .fondo-header {
+  background-color: rgb(119, 0, 255);
+}/*# sourceMappingURL=index.css.map */
