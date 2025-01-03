@@ -4,27 +4,138 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="./srcs/Bootstrap_logo.svg" type="image/x-icon">
-        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="./styles/CSS/index.css">
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="./js/index.js"></script>
         <title>Home de ejemplos</title>
     </head>
     <body onload="loadPages()">
         <!-- TODO HACER
-        -NAVBAR
-        -LIST GROUPS
-        -FORM VALIDATION -->
+        BS5 Tables
+        BS5 Dropdowns
+        BS5 Forms
+        BS5 Flex
+        BS5 Navs
+        BS5 Input Groups
+        BS5 Badges
+        BS5 Buttons
+        BS5 Select Menus
+        BS5 Tooltip
+        BS5 Carousel
+        BSS OffCanvas
+        BS5 Progress Bar
+        BS5 Range
+        BS5 Images
+        BS5 Cards
+        BS5 Collapse
+        BS5 Toast
+        BS5 Buttons Groups
+        BS5 DarkMode
+        BS5 Spinners
+        BS5 Alerts
+        BS5 Nav Bar -/
+        BS5 Modal
+        BS5 ScrolSpy
+        BS5 List Groups -/
+        BS5 Form Validation -/
+        BSS Utilities
+        BS5 Pagination
+        BS5 Popover
+        BS5 Floating Labels
+        BS5 Checks and Radios
+        NAVBAR
+        LIST GROUPS
+        FORM VALIDATION -->
 
-        <header class="container-fluid col-12 fondo-header">
+        <header class="container-fluid col-12 fondo-header sticky-top shadow-lg">
             <nav class="navbar navbar-expand-sm">
-                <p class="h1 text-light text-center p-2">BOOTSTRAP</p>
+                <p class="h1 text-light text-center p-1">BOOTSTRAP</p>
             </nav>
         </header>
 
-        <main class="container d-flex flex-row flex-wrap justify-content-center gap-5 mt-5">
+        <section class="container-fluid col-12 mt-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <h1>fjsdklañj</h1>
+                    <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./srcs/slider-bs1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./srcs/slider-bs2.webp" class="d-block w-100" alt="...">
+                  </div>
+
+                </div>
+              </div>
+        </section>
+
+        <main class="container d-flex flex-row flex-wrap justify-content-center gap-5 mt-5 pb-5">
             <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.png" class="w-100">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">TABLES</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">DROPDOWNS</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">FORMS</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">FLEX</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">NAVS</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">INPUT GROUPS</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">BADGES</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                    <hr class="text-dark col-12">
+                    <h4 class="fs-sm-6 fs-md-1">BUTTONS</h4>
+                </div>
+            </article>
+
+            <article class="col-sm-8 col-md-4 col-lg-3">
+                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                     <hr class="text-dark col-12">
                     <h4 class="fs-sm-6 fs-md-1">NAVBAR</h4>
                 </div>
@@ -32,7 +143,7 @@
             
             <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.png" class="w-100">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                     <hr class="text-dark col-12">
                     <h4>LIST GROUPS</h4>
                 </div>
@@ -40,7 +151,7 @@
             
             <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.png" class="w-100">
+                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                     <hr class="text-dark col-12">
                     <h4>FORM VALIDATION</h4>
                 </div>
