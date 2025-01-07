@@ -53,109 +53,192 @@
             </nav>
         </header>
 
-        <section class="container-fluid col-12 mt-5">
+        <section class="container col-12 mt-5 d-flex flex-column align-items-center">
+            <h1 class="mb-5">APRENDE DISEÑAR RÁPIDO TUS PÁGINAS CON BOOTSTRAP</h1>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                    <h1>fjsdklañj</h1>
-                    <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./srcs/slider-bs1.webp" class="d-block w-100" alt="...">
+                <div class="carousel-inner d-flex justify-content-start" style="height: fit-content;">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="./srcs/slider-bs1.webp" class="d-block w-100 h-75" alt="...">
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./srcs/slider-bs2.webp" class="d-block w-100" alt="...">
+                  <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./srcs/slider-bs2.webp" class="d-block w-100 h-75" alt="...">
                   </div>
 
                 </div>
               </div>
         </section>
 
-        <main class="container d-flex flex-row flex-wrap justify-content-center gap-5 mt-5 pb-5">
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">TABLES</h4>
-                </div>
-            </article>
+        <section class="container col-12">
+            <h1>¿QUÉ ES BOOTSTRAP?</h1>
+            <p>Bootsrap es un framework que nos permite utilizar una serie de clases ya definidas de CSS</p>
+        </section>
 
-            <article class="col-sm-8 col-md-4 col-lg-3">
+        <main class="container d-flex flex-row flex-wrap justify-content-center mb-5">
+            <div class="list-group col-4" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-primero-list" data-bs-toggle="list" href="#list-primero" role="tab" aria-controls="list-primero">Componentes de Navegación y Estructura</a>
+                <a class="list-group-item list-group-item-action" id="list-segundo-list" data-bs-toggle="list" href="#list-segundo" role="tab" aria-controls="list-segundo">Elementos de Formularios</a>
+                <a class="list-group-item list-group-item-action" href="">Estilo y Diseño de contenido</a>
+                <a class="list-group-item list-group-item-action" href="">Interaccción y Componentes Dinámicos</a>
+                <a class="list-group-item list-group-item-action" href="">Indicadores de Progreso y Retroalimentación</a>
+                <a class="list-group-item list-group-item-action" href="">Utilidades de Diseño y Comportamiento</a>
+            </div>
+
+            <div class="container col-7 bg-success d-flex flex-row">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active d-flex flex-row flex-wrap gap-5 p-4" id="list-primero" role="tabpanel" aria-labelledby="list-primero-list">
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">DROPDOWNS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">NAVS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">NAVBAR</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">SCROLL SPY</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">LIST GROUPS</h4>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-segundo" role="tabpanel" aria-labelledby="list-segundo-list">
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">FORMS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">INPUT GROUPS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">SELECT MENUS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">RANGE</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">CHECKS AND RADIOS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">FORM VALIDATION</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">FLOATING LABELS</h4>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <h4 class="fs-sm-6 fs-md-1">FORM VALIDATION</h4>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    const tabContent = document.querySelectorAll('.tab-pane');
+
+                    // Inicialmente, asegurarse de que solo el activo esté visible
+                    tabContent.forEach(tab => {
+                        if (!tab.classList.contains('show')) {
+                            tab.style.display = 'none';
+                        }
+                    });
+            
+                    // Escuchar cambios de pestañas
+                    const listGroupItems = document.querySelectorAll('[data-bs-toggle="list"]');
+
+                    listGroupItems.forEach(item => {
+                        item.addEventListener('shown.bs.tab', (event) => {
+                            const activeTab = document.querySelector(event.target.getAttribute('href'));
+            
+                            // Ocultar todas las pestañas
+                            tabContent.forEach(tab => {
+                                tab.style.display = 'none';
+                                tab.classList.remove('show', 'active', 'd-flex', 'flex-row');
+                            });
+            
+                            // Mostrar la pestaña activa
+                            activeTab.style.display = 'block';
+                            activeTab.classList.add('show', 'active','d-flex','flex-row');
+                        });
+                    });
+                });
+            </script>
+
+
+
+
+            
+            <!-- <article class="col-sm-8 col-md-4 col-lg-3">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                     <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                     <hr class="text-dark col-12">
                     <h4 class="fs-sm-6 fs-md-1">DROPDOWNS</h4>
                 </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">FORMS</h4>
-                </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">FLEX</h4>
-                </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">NAVS</h4>
-                </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">INPUT GROUPS</h4>
-                </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">BADGES</h4>
-                </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">BUTTONS</h4>
-                </div>
-            </article>
-
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">NAVBAR</h4>
-                </div>
-            </article>
-            
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4>LIST GROUPS</h4>
-                </div>
-            </article>
-            
-            <article class="col-sm-8 col-md-4 col-lg-3">
-                <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                    <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                    <hr class="text-dark col-12">
-                    <h4>FORM VALIDATION</h4>
-                </div>
-            </article>
+            </article> -->
         </main>
     </body>
 </html>
