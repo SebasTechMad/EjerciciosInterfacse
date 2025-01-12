@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../srcs/Bootstrap_logo.svg" type="image/x-icon">
-        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../styles/CSS/index.css">
         <script src="./js/index.js"></script>
         <title>validacion de formulario</title>
@@ -47,33 +47,33 @@
                 </article>
                 <br>
                 <article class="mt-4">
-                    <form class="rounded-4 shadow-lg p-3 was-validated">
+                    <form class="rounded-4 shadow-lg p-3 needs-validation" novalidate>
 
-                        <div class="mb-3">
+                        <div class="mb-3" style="position: relative;">
                           <label for="nombre" class="form-label">Nombre</label>
-                          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
-                          <div class="valid-feedback">Valido</div>
+                          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                          <div class="valid-tooltip" >Valido</div>
                           <div class="invalid-feedback">Introduce tu nombre</div>
                         </div>
 
                         <div class="mb-3">
                           <label for="email" class="form-label">Correo Electrónico</label>
                           <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
-                          <div class="valid-feedback">Valido</div>
-                          <div class="invalid-feedback">Introduce tu correo</div>
+                          <div class="valid-tooltip">Valido</div>
+                          <div class="invalid-tooltip">Introduce tu correo</div>
                         </div>
 
                         <div class="mb-3">
                           <label for="password" class="form-label">Contraseña</label>
                           <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
                           <div class="valid-feedback">Valido</div>
-                          <div class="invalid-feedback">Introduce tu contraseña</div>
+                          <div class="invalid-tooltip">Introduce tu contraseña</div>
                         </div>
 
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="terminos" required>
                           <label class="form-check-label" for="terminos">Aceptar términos y condiciones</label>
-                          <div class="invalid-feedback">Tienes que aceptar los terminos</div>
+                          <div class="invalid-tooltip">Tienes que aceptar los terminos</div>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Registrarse</button>
@@ -96,5 +96,26 @@
                 </article>
             </section>
         </main>
+        <script>
+            (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
+        </script>
     </body>
 </html>

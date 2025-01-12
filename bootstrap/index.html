@@ -10,60 +10,25 @@
         <title>Home de ejemplos</title>
     </head>
     <body onload="loadPages()">
-        <!-- TODO HACER
-        BS5 Tables
-        BS5 Dropdowns
-        BS5 Forms
-        BS5 Flex
-        BS5 Navs
-        BS5 Input Groups
-        BS5 Badges
-        BS5 Buttons
-        BS5 Select Menus
-        BS5 Tooltip
-        BS5 Carousel
-        BSS OffCanvas
-        BS5 Progress Bar
-        BS5 Range
-        BS5 Images
-        BS5 Cards
-        BS5 Collapse
-        BS5 Toast
-        BS5 Buttons Groups
-        BS5 DarkMode
-        BS5 Spinners
-        BS5 Alerts
-        BS5 Nav Bar -/
-        BS5 Modal
-        BS5 ScrolSpy
-        BS5 List Groups -/
-        BS5 Form Validation -/
-        BSS Utilities
-        BS5 Pagination
-        BS5 Popover
-        BS5 Floating Labels
-        BS5 Checks and Radios
-        NAVBAR
-        LIST GROUPS
-        FORM VALIDATION -->
-
         <header class="container-fluid col-12 fondo-header sticky-top shadow-lg">
             <nav class="navbar navbar-expand-sm">
                 <p class="h1 text-light text-center p-1">BOOTSTRAP</p>
             </nav>
         </header>
 
-        <section class="container col-12 mt-5 d-flex flex-column align-items-center">
-            <h1 class="mb-5">APRENDE DISEÑAR RÁPIDO TUS PÁGINAS CON BOOTSTRAP</h1>
+        <h1 class="mb-5 text-center">APRENDE DISEÑAR RÁPIDO TUS PÁGINAS CON BOOTSTRAP</h1>
+        <section class="container-fluid mt-5 mb-5 d-flex flex-column align-items-center">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner d-flex justify-content-start" style="height: fit-content;">
+                <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="2500">
-                    <img src="./srcs/slider-bs1.webp" class="d-block w-100 h-75" alt="...">
+                    <img src="./srcs/slider-bs1.webp" style="height: 40vh; width: 100vw;" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="2500">
-                    <img src="./srcs/slider-bs2.webp" class="d-block w-100 h-75" alt="...">
+                    <img src="./srcs/slider-bs2.webp" class="" style="height: 40vh; width: 100vw;" alt="...">
                   </div>
-
+                  <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./srcs/slider-bs3.webp" class="" style="height: 40vh; width: 100vw;" alt="...">
+                  </div>
                 </div>
               </div>
         </section>
@@ -77,20 +42,20 @@
             <div class="list-group col-4" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list-primero-list" data-bs-toggle="list" href="#list-primero" role="tab" aria-controls="list-primero">Componentes de Navegación y Estructura</a>
                 <a class="list-group-item list-group-item-action" id="list-segundo-list" data-bs-toggle="list" href="#list-segundo" role="tab" aria-controls="list-segundo">Elementos de Formularios</a>
-                <a class="list-group-item list-group-item-action" href="">Estilo y Diseño de contenido</a>
-                <a class="list-group-item list-group-item-action" href="">Interaccción y Componentes Dinámicos</a>
-                <a class="list-group-item list-group-item-action" href="">Indicadores de Progreso y Retroalimentación</a>
-                <a class="list-group-item list-group-item-action" href="">Utilidades de Diseño y Comportamiento</a>
+                <a class="list-group-item list-group-item-action" id="list-tercero-list" data-bs-toggle="list" href="#list-tercero" role="tab" aria-controls="list-tercero">Estilo y Diseño de contenido</a>
+                <a class="list-group-item list-group-item-action" id="list-cuarto-list" data-bs-toggle="list" href="#list-cuarto" role="tab" aria-controls="list-cuarto">Interaccción y Componentes Dinámicos</a>
+                <a class="list-group-item list-group-item-action" id="list-quinto-list" data-bs-toggle="list" href="#list-quinto" role="tab" aria-controls="list-quinto">Indicadores de Progreso y Retroalimentación</a>
+                <a class="list-group-item list-group-item-action" id="list-sexto-list" data-bs-toggle="list" href="#list-sexto" role="tab" aria-controls="list-sexto">Utilidades de Diseño y Comportamiento</a>
             </div>
 
-            <div class="container col-7 bg-success d-flex flex-row">
+            <div class="container col-8 d-flex flex-row">
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active d-flex flex-row flex-wrap gap-5 p-4" id="list-primero" role="tabpanel" aria-labelledby="list-primero-list">
                         <article class="col-sm-8 col-md-4 col-lg-3">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <img src="./srcs/icon_functions/menu-desplegable.png" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">DROPDOWNS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">DROPDOWNS</p>
                             </div>
                         </article>
 
@@ -98,7 +63,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">NAVS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">NAVS</p>
                             </div>
                         </article>
 
@@ -106,7 +71,15 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">NAVBAR</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">NAVBAR</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-center border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">SCROLL SPY</p>
                             </div>
                         </article>
 
@@ -114,15 +87,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">SCROLL SPY</h4>
-                            </div>
-                        </article>
-
-                        <article class="col-sm-8 col-md-4 col-lg-3">
-                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
-                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
-                                <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">LIST GROUPS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">LIST GROUPS</p>
                             </div>
                         </article>
                     </div>
@@ -132,7 +97,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">FORMS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">FORMS</p>
                             </div>
                         </article>
 
@@ -140,7 +105,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">INPUT GROUPS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">INPUT GROUPS</p>
                             </div>
                         </article>
 
@@ -148,7 +113,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">SELECT MENUS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">SELECT MENUS</p>
                             </div>
                         </article>
 
@@ -156,7 +121,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">RANGE</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">RANGE</p>
                             </div>
                         </article>
 
@@ -164,7 +129,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">CHECKS AND RADIOS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">CHECKS AND RADIOS</p>
                             </div>
                         </article>
 
@@ -172,7 +137,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">FORM VALIDATION</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">FORM VALIDATION</p>
                             </div>
                         </article>
 
@@ -180,7 +145,7 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">FLOATING LABELS</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">FLOATING LABELS</p>
                             </div>
                         </article>
 
@@ -188,10 +153,177 @@
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
-                                <h4 class="fs-sm-6 fs-md-1">FORM VALIDATION</h4>
+                                <p class="fs-sm-6 fs-md-1 text-center">FORM VALIDATION</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-tercero" role="tabpanel" aria-labelledby="list-tercero-list">
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">TABLES</p>
                             </div>
                         </article>
 
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">BADGES</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">BUTTONS</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">BUTTONS GROUPS</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">CARDS</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">IMAGES</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">SPINNERS</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">DARK MODE</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-cuarto" role="tabpanel" aria-labelledby="list-cuarto-list">
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">MODAL</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">TOOL TIP</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">TOAST</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">POP OVER</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">COLLAPSE</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">OFF CANVAS</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">CAROUSEL</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-quinto" role="tabpanel" aria-labelledby="list-quinto-list">
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">PROGRESS BAR</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">ALERTS</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">PAGINATION</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-sexto" role="tabpanel" aria-labelledby="list-sexto-list">
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">FLEX</p>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-8 col-md-4 col-lg-3">
+                            <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
+                                <img src="./srcs/Bootstrap_logo.svg" class="w-100">
+                                <hr class="text-dark col-12">
+                                <p class="fs-sm-6 fs-md-1 text-center">UTILITIES</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -236,7 +368,7 @@
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                     <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                     <hr class="text-dark col-12">
-                    <h4 class="fs-sm-6 fs-md-1">DROPDOWNS</h4>
+                    <h4 class="fs-sm-6 fs-md-1 text-center">DROPDOWNS</h4>
                 </div>
             </article> -->
         </main>
