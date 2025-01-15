@@ -16,6 +16,27 @@
             </nav>
         </header>
 
+        
+        <button class="fixed-top col-2 rounded-3 border ms-2 top-8 p-2 shadow-lg bg-dark text-light text-center visually-hidden-button" data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+
+        <div class="offcanvas offcanvas-sm offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Categorias</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="list-group col-sm-3 col-md-4 col-lg-2" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-primero-list" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" data-bs-toggle="list" href="#list-primero" role="tab" aria-controls="list-primero">Componentes de Navegación y Estructura</a>
+                    <a class="list-group-item list-group-item-action" id="list-segundo-list" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" data-bs-toggle="list" href="#list-segundo" role="tab" aria-controls="list-segundo">Elementos de Formularios</a>
+                    <a class="list-group-item list-group-item-action" id="list-tercero-list" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" data-bs-toggle="list" href="#list-tercero" role="tab" aria-controls="list-tercero">Estilo y Diseño de contenido</a>
+                    <a class="list-group-item list-group-item-action" id="list-cuarto-list" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" data-bs-toggle="list" href="#list-cuarto" role="tab" aria-controls="list-cuarto">Interaccción y Componentes Dinámicos</a>
+                    <a class="list-group-item list-group-item-action" id="list-quinto-list" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" data-bs-toggle="list" href="#list-quinto" role="tab" aria-controls="list-quinto">Indicadores de Progreso y Retroalimentación</a>
+                    <a class="list-group-item list-group-item-action" id="list-sexto-list" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasWithBothOptions" data-bs-toggle="list" href="#list-sexto" role="tab" aria-controls="list-sexto">Utilidades de Diseño y Comportamiento</a>
+                </div>
+            </div>
+          </div>
+
         <h1 class="mb-5 text-center" style="margin-top: 3rem;">APRENDE DISEÑAR RÁPIDO TUS PÁGINAS CON BOOTSTRAP</h1>
         <section class="container-fluid mt-5 mb-5 d-flex flex-column align-items-center shadow-lg">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
@@ -33,14 +54,14 @@
               </div>
         </section>
 
-        <section class="container col-6">
+        <section class="container col-sm-12 col-md-6">
             <h1 class="text-center mb-3">¿QUÉ ES BOOTSTRAP?</h1>
             <p class="text-start">Bootsrap es un framework que nos permite utilizar una serie de clases ya definidas de CSS para que nos
             ahorremos tiempo en definir los selectores y podamos ser más eficientes a la hora de maquetar y estilar la página web al mismo tiempo</p>
         </section>
 
         <main class="container-fluid d-flex flex-row flex-wrap justify-content-center mb-5">
-            <div class="list-group col-sm-3 col-md-4 col-lg-2" id="list-tab" role="tablist">
+            <div class="list-group col-sm-3 col-md-4 col-lg-3 visually-hidden-list" id="list-tab" role="tablist">
                 <a class="list-group-item list-group-item-action active" id="list-primero-list" data-bs-toggle="list" href="#list-primero" role="tab" aria-controls="list-primero">Componentes de Navegación y Estructura</a>
                 <a class="list-group-item list-group-item-action" id="list-segundo-list" data-bs-toggle="list" href="#list-segundo" role="tab" aria-controls="list-segundo">Elementos de Formularios</a>
                 <a class="list-group-item list-group-item-action" id="list-tercero-list" data-bs-toggle="list" href="#list-tercero" role="tab" aria-controls="list-tercero">Estilo y Diseño de contenido</a>
@@ -49,10 +70,11 @@
                 <a class="list-group-item list-group-item-action" id="list-sexto-list" data-bs-toggle="list" href="#list-sexto" role="tab" aria-controls="list-sexto">Utilidades de Diseño y Comportamiento</a>
             </div>
 
-            <div class="container col-sm-6 col-md-8 col-lg-10 d-flex flex-row">
+            <div class="container col-sm-6 col-md-8 col-lg-9 d-flex flex-row">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active d-flex flex-row flex-wrap gap-5 p-4" id="list-primero" role="tabpanel" aria-labelledby="list-primero-list">
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                    <div class="tab-pane fade show active d-flex flex-row justify-content-center flex-wrap gap-5 p-4" id="list-primero" role="tabpanel" aria-labelledby="list-primero-list">
+                        
+                        <article class="col-sm-12 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/menu-desplegable.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -60,7 +82,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/menu.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -68,7 +90,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-center border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/scroll.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -76,7 +98,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/grouped-list.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -85,8 +107,8 @@
                         </article>
                     </div>
 
-                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-segundo" role="tabpanel" aria-labelledby="list-segundo-list">
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                    <div class="tab-pane fade d-flex flex-row justify-content-center flex-wrap gap-5 p-4" id="list-segundo" role="tabpanel" aria-labelledby="list-segundo-list">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/contact-form.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -94,7 +116,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/input_group.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -102,7 +124,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/menu-desplegable.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -110,7 +132,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/range.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -118,7 +140,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/check.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -126,7 +148,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/contact-form.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -134,7 +156,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/text.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -143,9 +165,9 @@
                         </article>
                     </div>
 
-                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-tercero" role="tabpanel" aria-labelledby="list-tercero-list">
+                    <div class="tab-pane fade d-flex flex-row justify-content-center flex-wrap gap-5 p-4" id="list-tercero" role="tabpanel" aria-labelledby="list-tercero-list">
                         
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/button.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -153,7 +175,7 @@
                             </div>
                         </article>
                         
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/table.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -161,7 +183,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/text.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -169,7 +191,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/button.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -177,7 +199,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/spinner.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -185,7 +207,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/card.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -193,7 +215,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column h-100 align-items-center justify-content-center border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                                 <hr class="text-dark col-12">
@@ -201,7 +223,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/card.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -210,8 +232,8 @@
                         </article>
                     </div>
 
-                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-cuarto" role="tabpanel" aria-labelledby="list-cuarto-list">
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                    <div class="tab-pane fade d-flex flex-row justify-content-center flex-wrap gap-5 p-4" id="list-cuarto" role="tabpanel" aria-labelledby="list-cuarto-list">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/modal.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -219,7 +241,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/text.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -227,7 +249,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/modal.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -235,7 +257,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/text.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -243,7 +265,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/collapse.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -251,7 +273,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/menu-desplegable.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -259,7 +281,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/slider.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -268,8 +290,8 @@
                         </article>
                     </div>
 
-                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-quinto" role="tabpanel" aria-labelledby="list-quinto-list">
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                    <div class="tab-pane fade d-flex flex-row justify-content-center flex-wrap gap-5 p-4" id="list-quinto" role="tabpanel" aria-labelledby="list-quinto-list">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/progress_bar.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -277,7 +299,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/alert.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -285,7 +307,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/pagination.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -294,8 +316,8 @@
                         </article>
                     </div>
 
-                    <div class="tab-pane fade flex-row flex-wrap gap-5 p-4" id="list-sexto" role="tabpanel" aria-labelledby="list-sexto-list">
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                    <div class="tab-pane fade d-flex flex-row justify-content-center flex-wrap gap-5 p-4" id="list-sexto" role="tabpanel" aria-labelledby="list-sexto-list">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/icon_functions/collapse.png" class="w-100">
                                 <hr class="text-dark col-12">
@@ -303,7 +325,7 @@
                             </div>
                         </article>
 
-                        <article class="col-sm-8 col-md-4 col-lg-2">
+                        <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                             <div class="d-flex flex-column h-100 align-items-center justify-content-center border border-dark rounded-4 p-3 shadow-lg animar">
                                 <img src="./srcs/Bootstrap_logo.svg" class="w-100 mb-4">
                                 <hr class="text-dark col-12">
@@ -322,6 +344,7 @@
                     tabContent.forEach(tab => {
                         if (!tab.classList.contains('show')) {
                             tab.style.display = 'none';
+                            tab.classList.remove('show', 'active', 'd-flex', 'flex-row');
                         }
                     });
             
@@ -350,7 +373,7 @@
 
 
             
-            <!-- <article class="col-sm-8 col-md-4 col-lg-2">
+            <!-- <article class="col-sm-8 col-md-5 col-lg-4 col-xl-2">
                 <div class="d-flex flex-column align-items-center justify-content-end border border-dark rounded-4 p-3 shadow-lg animar">
                     <img src="./srcs/Bootstrap_logo.svg" class="w-100">
                     <hr class="text-dark col-12">

@@ -6244,7 +6244,7 @@ textarea.form-control-lg {
 }
 .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
   --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-width: 300px;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
@@ -7367,8 +7367,28 @@ textarea.form-control-lg {
   top: 0 !important;
 }
 
+.top-7 {
+  top: 7% !important;
+}
+
+.top-8 {
+  top: 10dvh !important;
+}
+
+.top-10 {
+  top: 10% !important;
+}
+
+.top-25 {
+  top: 25% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-75 {
+  top: 75% !important;
 }
 
 .top-100 {
@@ -7379,8 +7399,28 @@ textarea.form-control-lg {
   bottom: 0 !important;
 }
 
+.bottom-7 {
+  bottom: 7% !important;
+}
+
+.bottom-8 {
+  bottom: 10dvh !important;
+}
+
+.bottom-10 {
+  bottom: 10% !important;
+}
+
+.bottom-25 {
+  bottom: 25% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-75 {
+  bottom: 75% !important;
 }
 
 .bottom-100 {
@@ -7391,8 +7431,28 @@ textarea.form-control-lg {
   left: 0 !important;
 }
 
+.start-7 {
+  left: 7% !important;
+}
+
+.start-8 {
+  left: 10dvh !important;
+}
+
+.start-10 {
+  left: 10% !important;
+}
+
+.start-25 {
+  left: 25% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-75 {
+  left: 75% !important;
 }
 
 .start-100 {
@@ -7403,8 +7463,28 @@ textarea.form-control-lg {
   right: 0 !important;
 }
 
+.end-7 {
+  right: 7% !important;
+}
+
+.end-8 {
+  right: 10dvh !important;
+}
+
+.end-10 {
+  right: 10% !important;
+}
+
+.end-25 {
+  right: 25% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-75 {
+  right: 75% !important;
 }
 
 .end-100 {
@@ -11993,4 +12073,25 @@ html .fondo-header {
   top: 0;
   z-index: 1030; /* Asegura que quede encima de otros elementos */
   width: 100%; /* Ajusta al ancho del contenedor si es necesario */
+}
+
+@media (min-width: 576px) {
+  .visually-hidden-button {
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  .visually-hidden-button:not(caption) {
+    position: absolute !important;
+  }
+}
+@media (max-width: 576px) {
+  .visually-hidden-list {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

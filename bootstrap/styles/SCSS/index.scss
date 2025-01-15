@@ -1,5 +1,8 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
+$size-min-mobile:0px;
+$size-max-mobile:576px;
+
 @font-face {
   font-family: "titulo";
   src: url("../../srcs/font/BebasNeue-Regular.otf");
@@ -36,6 +39,19 @@ html{
   top: 0;
   z-index: 1030; /* Asegura que quede encima de otros elementos */
   width: 100%; /* Ajusta al ancho del contenedor si es necesario */
+}
+
+@media (min-width: $size-max-mobile){
+  
+  .visually-hidden-button {
+    @include visually-hidden;
+  }
+}
+
+@media(max-width: $size-max-mobile){
+  .visually-hidden-list {
+    display: none;
+  }
 }
 
   
