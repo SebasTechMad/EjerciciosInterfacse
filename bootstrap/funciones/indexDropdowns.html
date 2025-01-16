@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdowns</title>
+        <link rel="stylesheet" href="../styles/CSS/index.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body class="container">
+        
+        <button class="fixed-top col-2 rounded-3 border ms-2 top-14 p-2 shadow-lg bg-dark text-light text-center visually-hidden-button" data-bs-toggle="offcanvas" 
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+
+        <div class="offcanvas offcanvas-sm offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Componentes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                    <div class="d-flex flex-column gap-2">
+                        
+                        
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Navegación y Estructura
+                        </button>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dropdowns</a></li>
+                            <li><a class="dropdown-item" href="#">Navs</a></li>
+                            <li><a class="dropdown-item" href="#">Scroll Spy</a></li>
+                            <li><a class="dropdown-item" href="#">List Groups</a></li>
+                        </ul>
+    
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Formulario
+                        </button>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Forms</a></li>
+                            <li><a class="dropdown-item" href="#">Input Groups</a></li>
+                            <li><a class="dropdown-item" href="#">Select Menus</a></li>
+                            <li><a class="dropdown-item" href="#">Range</a></li>
+                            <li><a class="dropdown-item" href="#">Checks</a></li>
+                            <li><a class="dropdown-item" href="#">Form</a></li>
+                            <li><a class="dropdown-item" href="#">Floating Label</a></li>
+                        </ul>
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Estilo y diseño
+                        </button>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Button</a></li>
+                            <li><a class="dropdown-item" href="#">Tables</a></li>
+                            <li><a class="dropdown-item" href="#">Badges</a></li>
+                            <li><a class="dropdown-item" href="#">Button Groups</a></li>
+
+                            <li><a class="dropdown-item" href="#">Spinners</a></li>
+                            <li><a class="dropdown-item" href="#">Cards</a></li>
+                            <li><a class="dropdown-item" href="#">Dark Mode</a></li>
+                            <li><a class="dropdown-item" href="#">Images</a></li>
+                        </ul>
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Dinámicos e interactivos
+                        </button>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Progreso
+                        </button>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            Utilidades de diseño
+                        </button>
+    
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                        
+                    </div>
+            </div>
+          </div>
+
+
+    </body>
+</html>
