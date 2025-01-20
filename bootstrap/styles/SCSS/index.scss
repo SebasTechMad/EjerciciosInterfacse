@@ -10,6 +10,11 @@ $size-max-mobile:576px;
 
 html{
     font-size: 1.2rem;
+    margin: 0px;
+
+  body{
+    margin: 0px;
+  }
 
   .titulo{
     font-family: titulo;
@@ -29,9 +34,19 @@ html{
       background-color: rgb(119, 0, 255);
   }
 
+  .btn-color-nav{
+    background-color: rgb(119, 0, 255);
+  }
+
+  
+
   // #carouselExampleSlidesOnly{
   //   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
   // }
+}
+
+.adjust-text{
+  margin-top: 5rem;
 }
 
 .fixed-top-custom {
@@ -42,9 +57,15 @@ html{
 }
 
 @media (min-width: $size-max-mobile){
-  
-  .visually-hidden-button {
+  .visually-hidden-button, .invisible {
     @include visually-hidden;
+  }
+}
+
+
+@media(min-width:578px) and (max-width:1433px){
+  .adjust-text{
+    margin-top: 10rem;
   }
 }
 
