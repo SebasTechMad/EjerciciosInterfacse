@@ -104,7 +104,7 @@
 
             <div class="offcanvas-body">
                 <div class="d-flex flex-column gap-2">
-                    <button class="btn btn-color-nav text-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <button class="btn text-light btn-color-nav dropdown-toggle" type="button" data-bs-toggle="dropdown">
                         Navegación y Estructura
                     </button>
 
@@ -179,63 +179,81 @@
                 </div>
             </div>  
         </div>
-
-                <!-------------------------------------------QUE ES Y EJEMPLOS-------------------------------------------------------->
-        <main class="container adjust-text col-sm-12 col-md-6">    
-            <section class="mt-3 mb-5">
-                <h2>Dropdown</h2>
-                <p>Dropdown es un elemento visual en el que el usuario puede utilizar
-                para poder seleccionar una opcion de muchas compactas en un botón
-                </p>
-            </section>
-        <!-- COPIA Y PEGAR PARA ESTRUCTURA -->
-            <section class="mt-3 mb-5">
-                <h4>Ejemplo básico</h4>
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Desplegable
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                      <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                      <li><a class="dropdown-item" href="#">Opción 3</a></li>
+            <!-------------------------------------------QUE ES Y EJEMPLOS-------------------------------------------------------->
+                <nav id="navbar-example2" class="navbar bg-body-tertiary sticky-top top-50 px-3 mb-3">
+                    <a class="navbar-brand" href="#">ScrollSpy</a>
+                    <ul class="nav nav-pills">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">First</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                          <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                  </div>
-            </section>
+                </nav>
 
-            <!-- Ejemplo aqui -->
+                <section class="mt-3 mb-5">
+                    <h2>Scroll Spy</h2>
+                    <p>Scroll Spy es una función que permite al usuario poder scrollear por toda la página web
+                        y ver en que parte está ubicado el usuario
+                    </p>
+                </section>
 
-            <section class="mt-3 mb-5">
-                <h4>Ejemplo con menú deshabilitado</h4>
-                <div class="dropdown">
-                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                      Menú Deshabilitado
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                      <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Opción 3 (deshabilitada)</a></li>
-                    </ul>
-                  </div>
-            </section>
-            
-            <!-- Ejemplo aqui -->
-            <section class="mt-3 mb-5">
-                <h4>Ejemplo con split</h4>
-                <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Con split</button>
-                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                      <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                      <li><a class="dropdown-item" href="#">Opción 3</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Opción 4</a></li>
-                    </ul>
-                  </div>
-            </section>
-        </main>
+                
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                <h4 id="scrollspyHeading1">First heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio sit! Nam nihil id at placeat nostrum soluta dolorem, voluptate, architecto vero, quos molestiae expedita consectetur fuga totam repellendus reprehenderit.
+                Vero error dolores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                Ut, saepe. Molestias olores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                Magni quas, quae ipsum reprehenderit, odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                Magni quas, quae ipsum reprehenderit, amet magnam error mollitia nulla fuga harum minus! Pariatur inventore minus maiores fuga quod error quibusdam, nesciunt veniam! Quos voluptas accusantium, amet similique iure quaerat.</p>
+                <h4 id="scrollspyHeading2">Second heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio sit! Nam nihil id at placeat nostrum soluta dolorem, voluptate, architecto vero, quos molestiae expedita consectetur fuga totam repellendus reprehenderit.
+                    Vero error dolores olores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit, laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit, amet magnam error mollitia nulla fuga harum minus! Pariatur inventore minus maiores fuga quod error quibusdam, nesciunt veniam! Quos voluptas accusantium, amet similique iure quaerat.</p>
+                <h4 id="scrollspyHeading3">Third heading</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio sit! Nam nihil id at placeat nostrum soluta dolorem, voluptate, architecto vero, quos molestiae expedita consectetur fuga totam repellendus reprehenderit.
+                    Vero error doloresolores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit, laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit, amet magnam error mollitia nulla fuga harum minus! Pariatur inventore minus maiores fuga quod error quibusdam, nesciunt veniam! Quos voluptas accusantium, amet similique iure quaerat.</p>
+                <h4 id="scrollspyHeading4">Fourth heading</h4>
+                <p>olores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit,Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio sit! Nam nihil id at placeat nostrum soluta dolorem, voluptate, architecto vero, quos molestiae expedita consectetur fuga totam repellendus reprehenderit.
+                    Vero error dolores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit, amet magnam error mollitia nulla fuga harum minus! Pariatur inventore minus maiores fuga quod error quibusdam, nesciunt veniam! Quos voluptas accusantium, amet similique iure quaerat.</p>
+                <h4 id="scrollspyHeading5">Fifth heading</h4>
+                <p>or sit amet consectetur adipisicing elit. Eaque, optio sit! Nam nihil id at placeat nostrum soluta dolorem, voluptate, architecto vero, quos molestiae expedita consectetur fuga totam repellendus reprehenderit.
+                    Vero error dolores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenLorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, optio sit! Nam nihil id at placeat nostrum soluta dolorem, voluptate, architecto vero, quos molestiae expedita consectetur fuga totam repellendus reprehenderit.
+                    Vero error dolores laborum facere quis expedita minima voluptate repellendus assumenda debitis ut modi, quaerat quia magni at molestias. Quos autem iure rerum expedita pariatur, dignissimos odit laboriosam voluptas nisi!
+                    Ut, saepe. Molestias odit enim incidunt ullam reprehenderit tempore, modi facere esse dolorem, inventore harum velit assumenda ut nisi exercitationem. Eius atque quam expedita alias mollitia? Facilis, adipisci! Officiis, placeat.
+                    Magni quas, quae ipsum reprehenderit, amet magnam error mollitia nulla fuga harum minus! Pariatur inventore minus maiores fuga quod error quibusdam, nesciunt veniam! Quos voluptas accusantium, amet similique iure quaerat.</p>
+              </div>
+
+
+
+
+
+
     </body>
 </html>

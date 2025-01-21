@@ -1,7 +1,8 @@
 
 /**OJO, HE OPTIMIZADO EL CÓDIGO PARA QUE SOLO SE TENGA QUE AÑADIR LA URL DE CADA PÁGINA. PERO HAY 
  * QUE HACERLO DE MANERA ORDENADA PARA QUE ESTE PUEDA COINCIDIR LA URL CON LA PÁGINA CORRESPONDIENTE*/
-opcionesMenu = ["./funciones/indexDropdowns.html", "./funciones/indexNavs.html","./funciones/indexListGroups.html","./funciones/indexFormulario.html"];
+opcionesMenu = ["indexDropdowns.html", "indexNavs.html","indexScrollSpy.html","indexListGroups.html",
+    "./funciones/indexFormulario.html"];
 opciones = document.getElementsByTagName("article");
 
 let loadPages = () => {
@@ -11,7 +12,7 @@ let loadPages = () => {
         let ubicacion = opcionesMenu[cont];
         
         articulo.addEventListener('click', () => {
-            location.href = ubicacion;
+            location.href = "./funciones/"+ubicacion;
         });
 
         cont ++;
