@@ -185,65 +185,35 @@
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
         
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+        <section class="mt-3 mb-5">
+            <h2>Toast</h2>
+            <button type="button" class="btn btn-primary" data-bs-toggle="toast" data-bs-target="#toastExample" onclick="mostrarToast()">
+                Mostrar Toast
+            </button>
+    
+            <!-- Toast -->
+            <div class="toast" id="toastExample" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Alerta</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Este es un mensaje de toast. HOLA SOY SEBAS
+                </div>
             </div>
-        </div>
-    </section>
+    
+            <script>
+                var toastEl = document.getElementById('toastExample');
+                var toast = new bootstrap.Toast(toastEl);
+                toast.show();
 
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
+                let mostrarToast = () =>{
+                    var toastEl = document.getElementById('toastExample');
+                    var toast = new bootstrap.Toast(toastEl);
+                    toast.show();
+                }
+            </script>
+        </section>
 
     </main>
 </body>

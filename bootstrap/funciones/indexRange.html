@@ -185,65 +185,58 @@
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
         
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
+        <section class="mt-3 mb-5">
+            <h2>Range</h2>
+            <p>Range es una forma de representar valores que puedan abarcar un intervalo muy extenso de números. Para representar
+                tal cantidad de números, podríamos utlizar el Range que nos ofrece bootstrap. Simplemente tenemos que añadir la etiqueta
+                <code>input:range</code> y poner en la clase <code>form-range</code>
+            </p>
+        </section>
 
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 1: Range Básico</h2>
+            <div class="mb-3">
+                <label for="basicRange" class="form-label">Seleccione un valor</label>
+                <input type="range" class="form-range" id="basicRange">
             </div>
-        </div>
-    </section>
-
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
+        </section>
+    
+        <!-- Ejemplo 2: Range con pasos definidos -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 2: Range con Pasos Definidos</h2>
+            <div class="mb-3">
+                <label for="stepRange" class="form-label">Seleccione un valor (incrementos de 10)</label>
+                <input type="range" class="form-range" id="stepRange" min="0" max="100" step="10">
+            </div>
+        </section>
+    
+        <!-- Ejemplo 3: Range con valor inicial -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 3: Range con Valor Inicial</h2>
+            <div class="mb-3">
+                <label for="initialValueRange" class="form-label">Seleccione un valor (inicio en 50)</label>
+                <input type="range" class="form-range" id="initialValueRange" min="0" max="100" value="50">
+            </div>
+        </section>
+    
+        <!-- Ejemplo 4: Range deshabilitado -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 4: Range Deshabilitado</h2>
+            <div class="mb-3">
+                <label for="disabledRange" class="form-label">Slider deshabilitado</label>
+                <input type="range" class="form-range" id="disabledRange" disabled>
+            </div>
+        </section>
+    
+        <!-- Ejemplo 5: Range con etiqueta dinámica -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 5: Range con Etiqueta Dinámica</h2>
+            <div class="mb-3">
+                <label for="dynamicRange" class="form-label">Seleccione un valor: <span id="rangeValue">50</span></label>
+                <input type="range" class="form-range" id="dynamicRange" min="0" max="100" value="50"
+                    oninput="document.getElementById('rangeValue').innerText = this.value">
+            </div>
+        </section>
 
     </main>
 </body>

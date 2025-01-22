@@ -12050,11 +12050,13 @@ textarea.form-control-lg {
   src: url("../../srcs/font/BebasNeue-Regular.otf");
 }
 html {
+  height: 100dvh;
   font-size: 1.2rem;
   margin: 0px;
 }
 html body {
   margin: 0px;
+  height: 100dvh;
 }
 html .titulo {
   font-family: titulo;

@@ -17,7 +17,8 @@
             </div>
 
             <ul class="navbar-nav collapse navbar-collapse d-sm-none d-md-flex flex-wrap gap-2" id="collapsibleNavbar">
-                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown" type="button">
+                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown"
+                    type="button">
                     Navegación y Estructura
                 </button>
 
@@ -95,18 +96,22 @@
 
 
 
-    <button class="fixed-top col-2 rounded-3 border ms-2 top-14 p-2 shadow-lg bg-dark text-light text-center visually-hidden-button" data-bs-toggle="offcanvas" 
-    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+    <button
+        class="fixed-top col-2 rounded-3 border ms-2 top-14 p-2 shadow-lg bg-dark text-light text-center visually-hidden-button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">☰</button>
 
-    <div class="offcanvas offcanvas-sm offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas offcanvas-sm offcanvas-start" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Componentes</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Componentes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
         <div class="offcanvas-body">
             <div class="d-flex flex-column gap-2">
-                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown" type="button">
+                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown"
+                    type="button">
                     Navegación y Estructura
                 </button>
 
@@ -184,67 +189,70 @@
     <!-------------------------------------------QUE ES Y EJEMPLOS-------------------------------------------------------->
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
-        
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+        <section class="mt-3 mb-5">
+            <h2>Select menú</h2>
+            <p>Con esta funcionalidad de Bootstrap, nos permitirá darle un diseño más moderno a la etiqueta predeterminada de
+                <code>select</code>, simplemente poniendo en cada opción un <code>form-select</code>
+            </p>
+        </section>
+        <!-- PONER UN SECTION POR CADA EJEMPLO -->
+        <!-- Ejemplo 1: Select básico -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 1: Select Básico</h2>
+            <div class="mb-3">
+                <label for="basicSelect" class="form-label">Seleccione una opción</label>
+                <select class="form-select" id="basicSelect" aria-label="Select básico">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                </select>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
+        <!-- Ejemplo 2: Select con tamaño reducido -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 2: Select con Tamaño Reducido</h2>
+            <div class="mb-3">
+                <label for="smallSelect" class="form-label">Seleccione una opción (pequeño)</label>
+                <select class="form-select form-select-sm" id="smallSelect" aria-label="Select pequeño">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                </select>
+            </div>
+        </section>
 
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+        <!-- Ejemplo 3: Select con tamaño grande -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 3: Select con Tamaño Grande</h2>
+            <div class="mb-3">
+                <label for="largeSelect" class="form-label">Seleccione una opción (grande)</label>
+                <select class="form-select form-select-lg" id="largeSelect" aria-label="Select grande">
+                    <option selected>Seleccione una opción</option>
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                </select>
+            </div>
+        </section>
 
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
-
+        <!-- Ejemplo 4: Select con múltiples opciones -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 4: Select con Múltiples Opciones</h2>
+            <div class="mb-3">
+                <label for="multiSelect" class="form-label">Seleccione una o más opciones</label>
+                <select class="form-select" id="multiSelect" multiple aria-label="Select múltiple">
+                    <option value="1">Opción 1</option>
+                    <option value="2">Opción 2</option>
+                    <option value="3">Opción 3</option>
+                    <option value="4">Opción 4</option>
+                    <option value="5">Opción 5</option>
+                </select>
+            </div>
+        </section>
+        <br><br>
     </main>
 </body>
 

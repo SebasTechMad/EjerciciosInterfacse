@@ -185,65 +185,59 @@
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
         
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+        <section class="mt-3 mb-5">
+            <h2>Card Básica</h2>
+            <div class="card" style="width: 18rem;">
+                <img src="./../srcs/Bootstrap_logo.svg" class="card-img-top" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card título</h5>
+                    <p class="card-text">Algunos rápidos ejemplos de contenido dentro de una card. Haga clic en el botón de abajo para más información.</p>
+                    <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
+        </section>
+    
+        <!-- Ejemplo 3: Card con Texto y Botón -->
+        <section class="mt-3 mb-5">
+            <h2>Card con Texto y Botón</h2>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card Informativa</h5>
+                    <p class="card-text">Esta es una card con texto descriptivo que puede incluir una acción asociada.</p>
+                    <a href="#" class="btn btn-info">Detalles</a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Ejemplo 4: Card con Listado de Elementos -->
+        <section class="mt-3 mb-5">
+            <h2>Card con Listado de Elementos</h2>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Lista de Elementos</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Elemento 1</li>
+                        <li class="list-group-item">Elemento 2</li>
+                        <li class="list-group-item">Elemento 3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Ejemplo 5: Card con Pie de Página -->
+        <section class="mt-3 mb-5">
+            <h2>Card con Pie de Página</h2>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card con Pie de Página</h5>
+                    <p class="card-text">Esta card tiene un pie de página con un mensaje adicional.</p>
+                </div>
+                <div class="card-footer text-muted">
+                    Pie de página de la card
+                </div>
+            </div>
+        </section>
+        <br>
 
     </main>
 </body>

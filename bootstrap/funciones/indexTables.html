@@ -185,65 +185,142 @@
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
         
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
+        <!-- PONER UN SECTION POR CADA EJEMPLO -->
+        <section class="mt-3 mb-5">
+            <h2>Tabla Básica</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan</td>
+                        <td>25</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ana</td>
+                        <td>30</td>
+                        <td>Barcelona</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pedro</td>
+                        <td>28</td>
+                        <td>Valencia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <!-- Ejemplo 2: Tabla con Rayas -->
+        <section class="mt-3 mb-5">
+            <h2>Tabla con Rayas</h2>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Manzana</td>
+                        <td>$1.00</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Plátano</td>
+                        <td>$0.50</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Naranja</td>
+                        <td>$0.80</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <!-- Ejemplo 3: Tabla con Bordes -->
+        <section class="mt-3 mb-5">
+            <h2>Tabla con Bordes</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Asignatura</th>
+                        <th>Nota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Matemáticas</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Historia</td>
+                        <td>7.0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Física</td>
+                        <td>9.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+        <!-- Ejemplo 4: Tabla de Colores -->
+        <section class="mt-3 mb-5">
+            <h2>Tabla de Colores</h2>
+            <table class="table table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>#</th>
+                        <th>Equipo</th>
+                        <th>Puntos</th>
+                        <th>Posición</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Real Madrid</td>
+                        <td>75</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Barcelona</td>
+                        <td>72</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Atlético Madrid</td>
+                        <td>68</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br><br>
 
     </main>
 </body>

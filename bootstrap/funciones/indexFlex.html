@@ -185,65 +185,98 @@
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
         
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+        <section class="mt-3 mb-5">
+            <h2>Flex 1: Alineación horizontal</h2>
+    
+            <div class="d-flex justify-content-between">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+                <div>Elemento 3</div>
             </div>
-        </div>
-    </section>
-
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 2: Alineación vertical</h2>
+    
+            <div class="d-flex flex-column">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+                <div>Elemento 3</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 3: Alineación de items al centro</h2>
+    
+            <div class="d-flex justify-content-center">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 4: Alineación con espacio entre elementos</h2>
+    
+            <div class="d-flex justify-content-around">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+                <div>Elemento 3</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 5: Alineación de elementos en el final</h2>
+    
+            <div class="d-flex justify-content-end">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 6: Justificación en columna</h2>
+    
+            <div class="d-flex flex-column justify-content-start">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 7: Flex con alineación de items</h2>
+    
+            <div class="d-flex align-items-center">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 8: Flex con alineación al final</h2>
+    
+            <div class="d-flex align-items-end">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 9: Flex con espacio entre</h2>
+    
+            <div class="d-flex justify-content-between">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
+    
+        <section class="mt-3 mb-5">
+            <h2>Flex 10: Flex con columnas</h2>
+    
+            <div class="d-flex flex-column-reverse">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+            </div>
+        </section>
 
     </main>
 </body>

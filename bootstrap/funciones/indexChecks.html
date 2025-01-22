@@ -17,7 +17,8 @@
             </div>
 
             <ul class="navbar-nav collapse navbar-collapse d-sm-none d-md-flex flex-wrap gap-2" id="collapsibleNavbar">
-                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown" type="button">
+                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown"
+                    type="button">
                     Navegación y Estructura
                 </button>
 
@@ -95,18 +96,22 @@
 
 
 
-    <button class="fixed-top col-2 rounded-3 border ms-2 top-14 p-2 shadow-lg bg-dark text-light text-center visually-hidden-button" data-bs-toggle="offcanvas" 
-    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+    <button
+        class="fixed-top col-2 rounded-3 border ms-2 top-14 p-2 shadow-lg bg-dark text-light text-center visually-hidden-button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">☰</button>
 
-    <div class="offcanvas offcanvas-sm offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas offcanvas-sm offcanvas-start" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Componentes</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Componentes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
         <div class="offcanvas-body">
             <div class="d-flex flex-column gap-2">
-                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown" type="button">
+                <button class="btn text-light btn-color-nav dropdown-toggle" id="navegacion" data-bs-toggle="dropdown"
+                    type="button">
                     Navegación y Estructura
                 </button>
 
@@ -184,67 +189,93 @@
     <!-------------------------------------------QUE ES Y EJEMPLOS-------------------------------------------------------->
 
     <main class="container adjust-text col-sm-12 col-md-6 col-lg-12">
-        
-        <!-- Ejemplo 1: Button Group Vertical -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Vertical</h2>
-        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-            <button type="button" class="btn btn-primary">Botón 1</button>
-            <button type="button" class="btn btn-secondary">Botón 2</button>
-            <button type="button" class="btn btn-success">Botón 3</button>
-        </div>
-    </section>
 
-    <!-- Ejemplo 2: Button Group Horizontal -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group Horizontal</h2>
-        <div class="btn-group" role="group" aria-label="Horizontal button group">
-            <button type="button" class="btn btn-danger">Botón 1</button>
-            <button type="button" class="btn btn-warning">Botón 2</button>
-            <button type="button" class="btn btn-info">Botón 3</button>
-        </div>
-    </section>
-
-    <!-- Ejemplo 3: Button Group con Dropdown -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Dropdown</h2>
-        <div class="btn-group" role="group" aria-label="Button group with dropdown">
-            <button type="button" class="btn btn-success">Botón 1</button>
-            <button type="button" class="btn btn-success">Botón 2</button>
-            <div class="btn-group">
-                <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
-                    aria-expanded="false">Dropdown</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Acción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Acción 3</a></li>
-                </ul>
+        <!-- Ejemplo 1: Checkbox básico -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 1: Checkbox Básico</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="basicCheck">
+                <label class="form-check-label" for="basicCheck">
+                    Acepto los términos y condiciones
+                </label>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Ejemplo 4: Button Group con Toggle -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Toggle</h2>
-        <div class="btn-group" role="group" aria-label="Button group with toggle">
-            <button type="button" class="btn btn-dark">Botón 1</button>
-            <button type="button" class="btn btn-dark">Botón 2</button>
-            <button type="button" class="btn btn-dark">Botón 3</button>
-        </div>
-    </section>
+        <!-- Ejemplo 2: Checkbox deshabilitado -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 2: Checkbox Deshabilitado</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="disabledCheck" disabled>
+                <label class="form-check-label" for="disabledCheck">
+                    No puedes seleccionar esta opción
+                </label>
+            </div>
+        </section>
 
-    <!-- Ejemplo 5: Button Group con Checkboxes -->
-    <section class="mt-3 mb-5">
-        <h2>Button Group con Checkboxes</h2>
-        <div class="btn-group" role="group" aria-label="Button group with checkboxes">
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+        <!-- Ejemplo 3: Checkbox en línea -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 3: Checkboxes en Línea</h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheck1">
+                <label class="form-check-label" for="inlineCheck1">Opción 1</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheck2">
+                <label class="form-check-label" for="inlineCheck2">Opción 2</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheck3">
+                <label class="form-check-label" for="inlineCheck3">Opción 3</label>
+            </div>
+        </section>
 
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-        </div>
-    </section>
-
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 1: Radio Básico</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="basicRadios" id="basicRadio1">
+                <label class="form-check-label" for="basicRadio1">Opción 1</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="basicRadios" id="basicRadio2">
+                <label class="form-check-label" for="basicRadio2">Opción 2</label>
+            </div>
+        </section>
+    
+        <!-- Ejemplo 2: Radio deshabilitado -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 2: Radio Deshabilitado</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="disabledRadios" id="disabledRadio1" disabled>
+                <label class="form-check-label" for="disabledRadio1">Opción deshabilitada</label>
+            </div>
+        </section>
+    
+        <!-- Ejemplo 3: Radios en línea -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 3: Radios en Línea</h2>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadios" id="inlineRadio1">
+                <label class="form-check-label" for="inlineRadio1">Opción A</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadios" id="inlineRadio2">
+                <label class="form-check-label" for="inlineRadio2">Opción B</label>
+            </div>
+        </section>
+    
+        <!-- Ejemplo 4: Radio con estilos personalizados -->
+        <section class="mt-3 mb-5">
+            <h2>Ejemplo 4: Radio con Estilos Personalizados</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="customRadios" id="customRadio1" style="accent-color: red;">
+                <label class="form-check-label" for="customRadio1">Opción con color rojo</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="customRadios" id="customRadio2" style="accent-color: green;">
+                <label class="form-check-label" for="customRadio2">Opción con color verde</label>
+            </div>
+        </section>
+        <br><br>
     </main>
 </body>
 
