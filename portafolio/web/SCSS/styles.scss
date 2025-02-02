@@ -1,0 +1,28 @@
+@use "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+/**/
+
+// $primario-dark:#2a2a2a;
+// $secundario-dark:#2c2c2c;
+
+// $primario-light:#FFF;
+// $secundario-light:#d6d6d6;
+// $dark-mode:false;
+
+:root{
+    --color-primario:#2a2a2a;
+    --color-secundario:#2c2c2c;
+    --color-texto:white;
+}
+
+
+main{
+    background-color: var(--color-primario);
+}
+
+h1{
+    color: var(--color-texto);
+}
+
+
+
