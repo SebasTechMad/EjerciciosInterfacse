@@ -9,8 +9,11 @@ let light_text = "black";
 let darkMode = true;
 
 
+let opcionesCerradas = true;
 
-let prueba = () =>{
+
+
+let cambioColores = () =>{
     if(darkMode == false){
         document.documentElement.style.setProperty("--color-primario",dark_color_primario);
         document.documentElement.style.setProperty("--color-secundario",dark_color_secundario);
@@ -21,5 +24,29 @@ let prueba = () =>{
         document.documentElement.style.setProperty("--color-secundario",light_color_secundario);
         document.documentElement.style.setProperty("--color-texto",light_text);
         darkMode = false;
+    }
+}
+
+let abrirOpciones = () =>{
+    let btnMenu = document.getElementById("btnMenu");
+    let btnOpciones = document.getElementsByName("opciones");
+
+    if(opcionesCerradas){
+        btnMenu.classList.add("button-abrir-animation");
+        btnMenu.classList.remove("button-cerrar-animation");
+
+        btnOpciones[0].classList.add("primer-boton-aparecer");
+        btnOpciones[0].classList.remove("primer-boton-desaparecer");
+
+        opcionesCerradas = false;
+    }else{
+        btnMenu.classList.add("button-cerrar-animation");
+        btnMenu.classList.remove("button-abrir-animation");
+
+        btnOpciones[0].classList.add("primer-boton-desaparecer");
+        btnOpciones[0].classList.remove("primer-boton-aparecer");
+        
+
+        opcionesCerradas = true;
     }
 }
