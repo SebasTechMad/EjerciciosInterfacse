@@ -6,6 +6,9 @@ let light_color_primario = "white";
 let light_color_secundario = "white";
 let light_text = "black";
 
+let t_blanco = "text-light";
+let t_negro = "text-dark";
+
 let darkMode = true;
 
 
@@ -14,15 +17,22 @@ let opcionesCerradas = true;
 
 
 let cambioColores = () =>{
+
     if(darkMode == false){
         document.documentElement.style.setProperty("--color-primario",dark_color_primario);
         document.documentElement.style.setProperty("--color-secundario",dark_color_secundario);
         document.documentElement.style.setProperty("--color-texto",dark_text);
+
+        cambioColoresIconos(t_blanco);
+
         darkMode = true;
     }else{
         document.documentElement.style.setProperty("--color-primario",light_color_primario);
         document.documentElement.style.setProperty("--color-secundario",light_color_secundario);
         document.documentElement.style.setProperty("--color-texto",light_text);
+
+        cambioColoresIconos(t_negro);
+
         darkMode = false;
     }
 }
@@ -30,6 +40,8 @@ let cambioColores = () =>{
 let abrirOpciones = () =>{
     let btnMenu = document.getElementById("btnMenu");
     let btnOpciones = document.getElementsByName("opciones");
+    
+    
 
     if(opcionesCerradas){
         btnMenu.classList.add("button-abrir-animation");
@@ -40,6 +52,7 @@ let abrirOpciones = () =>{
 
         btnOpciones[1].classList.add("segundo-boton-aparecer");
         btnOpciones[1].classList.remove("segundo-boton-desaparecer");
+
 
         opcionesCerradas = false;
     }else{
@@ -53,5 +66,17 @@ let abrirOpciones = () =>{
         btnOpciones[1].classList.remove("segundo-boton-aparecer");
 
         opcionesCerradas = true;
+    }
+}
+
+let cambioColoresIconos = (color) =>{
+    let current_iconos = document.getElementsByTagName("i");
+
+    for (const icono of current_iconos) {
+        if(color == "text-light"){
+            icono.classList.replace("text-dark", color);
+        }else{
+            icono.classList.replace("text-light", color);
+        }
     }
 }
