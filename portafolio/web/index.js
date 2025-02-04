@@ -38,6 +38,9 @@ let abrirOpciones = () =>{
         btnOpciones[0].classList.add("primer-boton-aparecer");
         btnOpciones[0].classList.remove("primer-boton-desaparecer");
 
+        btnOpciones[1].classList.add("segundo-boton-aparecer");
+        btnOpciones[1].classList.remove("segundo-boton-desaparecer");
+
         opcionesCerradas = false;
     }else{
         btnMenu.classList.add("button-cerrar-animation");
@@ -46,6 +49,8 @@ let abrirOpciones = () =>{
         btnOpciones[0].classList.add("primer-boton-desaparecer");
         btnOpciones[0].classList.remove("primer-boton-aparecer");
         
+        btnOpciones[1].classList.add("segundo-boton-desaparecer");
+        btnOpciones[1].classList.remove("segundo-boton-aparecer");
 
         opcionesCerradas = true;
     }

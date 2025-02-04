@@ -12120,12 +12120,28 @@ textarea.form-control-lg {
     transform: translate(0px, 0px);
   }
   to {
-    transform: translate(80px, 80px);
+    transform: translate(68px, 68px);
   }
 }
 @keyframes desaparecer-primer-boton {
   from {
-    transform: translate(80px, 80px);
+    transform: translate(68px, 68px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes aparecer-segundo-boton {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(80px, 0px);
+  }
+}
+@keyframes desaparecer-segundo-boton {
+  from {
+    transform: translate(80px, 0px);
   }
   to {
     transform: translate(0px, 0px);
@@ -12145,7 +12161,7 @@ body .button-opciones {
   background-color: var(--color-secundario);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: solid 1px var(--color-secundario);
-  border-radius: 2rem;
+  border-radius: 20rem;
 }
 body .button-abrir-animation {
   animation: girar 0.2s ease-in-out;
@@ -12155,14 +12171,31 @@ body .button-cerrar-animation {
   animation: regresar 0.2s ease-in-out;
   transform: rotate(0deg);
 }
+body .boton-principal {
+  width: 4rem;
+  height: 4rem;
+  z-index: 3;
+}
 body [name=opciones] {
-  z-index: -3;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 body .primer-boton-aparecer {
-  animation: aparecer-primer-boton 0.5s ease-in-out;
-  transform: translate(80px, 80px);
+  animation: aparecer-primer-boton 0.3s ease-in-out;
+  transform: translate(68px, 68px);
 }
 body .primer-boton-desaparecer {
-  animation: desaparecer-primer-boton 0.5s ease-in-out;
+  animation: desaparecer-primer-boton 0.3s ease-in-out;
+  transform: translate(0px, 0px);
+}
+body .segundo-boton-aparecer {
+  animation: aparecer-segundo-boton 0.3s ease-in-out;
+  transform: translate(80px, 0px);
+}
+body .segundo-boton-desaparecer {
+  animation: desaparecer-segundo-boton 0.3s ease-in-out;
   transform: translate(0px, 0px);
 }/*# sourceMappingURL=styles.css.map */
