@@ -71,10 +71,13 @@ let abrirOpciones = () =>{
 
 let cambioColoresIconos = (color) =>{
     let current_iconos = document.getElementsByTagName("i");
+    
 
     for (const icono of current_iconos) {
         if(color == "text-light"){
             icono.classList.replace("text-dark", color);
+            
+
         }else{
             icono.classList.replace("text-light", color);
         }
