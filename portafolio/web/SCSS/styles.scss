@@ -83,6 +83,13 @@ body{
     background-color: var(--color-primario);
     color: var(--color-texto);
 
+    .texto-chat{
+        text-align: start; 
+        width:16rem; 
+        word-wrap: break-word; 
+        white-space: normal;
+    }
+
     .button-opciones{
         background-color: var(--color-secundario);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
