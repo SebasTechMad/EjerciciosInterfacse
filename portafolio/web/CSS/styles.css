@@ -12162,12 +12162,21 @@ body .texto-chat {
   width: 12rem;
   word-wrap: break-word;
   white-space: normal;
+  font-weight: 600;
 }
 body .button-opciones {
   background-color: var(--color-secundario);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border: solid 1px var(--color-secundario);
   border-radius: 20rem;
+}
+body [name=bar-chat] {
+  background-color: var(--color-secundario);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: solid 1px var(--color-secundario);
+  border-radius: 20rem;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
 }
 body .button-abrir-animation {
   animation: girar 0.2s ease-in-out;

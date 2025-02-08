@@ -88,6 +88,7 @@ body{
         width:12rem; 
         word-wrap: break-word; 
         white-space: normal;
+        font-weight:600;
     }
 
     .button-opciones{
@@ -95,6 +96,15 @@ body{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border: solid 1px var(--color-secundario);
         border-radius: 20rem;
+    }
+
+    [name="bar-chat"]{
+        background-color: var(--color-secundario);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: solid 1px var(--color-secundario);
+        border-radius: 20rem;
+        padding: .6rem;
+        margin-bottom: 1rem;
     }
 
     .button-abrir-animation{

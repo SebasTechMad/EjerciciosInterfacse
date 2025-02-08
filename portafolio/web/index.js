@@ -17,11 +17,15 @@ let opcionesCerradas = true;
 
 
 let cambioColores = () =>{
+    
+    let barra_divisora_msg = document.getElementsByTagName("hr");
 
     if(darkMode == false){
         document.documentElement.style.setProperty("--color-primario",dark_color_primario);
         document.documentElement.style.setProperty("--color-secundario",dark_color_secundario);
         document.documentElement.style.setProperty("--color-texto",dark_text);
+
+        barra_divisora_msg[0].classList.replace("border-dark","border-light");
 
         cambioColoresIconos(t_blanco);
 
@@ -30,6 +34,8 @@ let cambioColores = () =>{
         document.documentElement.style.setProperty("--color-primario",light_color_primario);
         document.documentElement.style.setProperty("--color-secundario",light_color_secundario);
         document.documentElement.style.setProperty("--color-texto",light_text);
+        
+        barra_divisora_msg[0].classList.replace("border-light","border-dark");
 
         cambioColoresIconos(t_negro);
 
@@ -71,7 +77,6 @@ let abrirOpciones = () =>{
 
 let cambioColoresIconos = (color) =>{
     let current_iconos = document.getElementsByTagName("i");
-    
 
     for (const icono of current_iconos) {
         if(color == "text-light"){
