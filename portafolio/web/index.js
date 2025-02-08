@@ -10,10 +10,63 @@ let t_blanco = "text-light";
 let t_negro = "text-dark";
 
 let darkMode = true;
+let preguntasAbiertas = false;
 
 
 let opcionesCerradas = true;
 
+var msg_preguntas;
+let preguntas;
+let user_respuesta;
+let bot_respuesta;
+let trigger_preguntas;
+const respuestas = ["1","2","3","4","5"];
+
+let cargarVariables = () =>{
+    msg_preguntas = document.getElementById("preguntas");
+    preguntas = document.getElementById("barChat");
+    
+
+    preguntas.addEventListener("click",animationPreguntas);
+    
+
+    trigger_preguntas = document.getElementsByName("pregunta");
+
+    trigger_preguntas[0].addEventListener("click",addConversacionQuienEres);
+
+}
+
+var addConversacionQuienEres = () =>{
+    user_respuesta = document.getElementById("msg_user");
+    bot_respuesta = document.getElementById("msg_bot");
+
+    user_respuesta.innerHTML += "<h1>quien sos</h1>";
+}
+
+
+
+
+
+
+
+let animationPreguntas = () =>{
+
+    if(preguntasAbiertas == false){
+        console.log(msg_preguntas);
+        msg_preguntas.classList.add("preguntas-aparecer-animation");
+        msg_preguntas.classList.remove("preguntas-desaparecer-animation");
+        preguntasAbiertas = true;
+    }else{
+        console.log(msg_preguntas);
+        msg_preguntas.classList.remove("preguntas-aparecer-animation");
+        msg_preguntas.classList.add("preguntas-desaparecer-animation");
+        preguntasAbiertas = false;
+    }
+
+
+
+
+}
 
 
 let cambioColores = () =>{
@@ -88,3 +141,5 @@ let cambioColoresIconos = (color) =>{
         }
     }
 }
+
+

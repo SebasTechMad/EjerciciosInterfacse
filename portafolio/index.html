@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./web/CSS/styles.css">
         <script src="./web/index.js"></script>
     </head>
-    <body class="mode-dark h-100">
+    <body class="mode-dark h-100" onload="cargarVariables()">
         <!-- BOTONES PARA FUNCIONES EXTRA -->
         
         <article class="main container mb-5">
@@ -24,7 +24,7 @@
                         <h1 class="mb-5 mt-5" style="text-align: center;">Bienvenido a mi portafolio</h1>
                     </div>
                         <!-- Respuesta del usuario -->
-                        <div>
+                        <!-- <div>
                             <div class="d-flex justify-content-end">
                                 <div class="d-flex flex-column align-items-end">
                                     <div class="d-flex justify-content-end gap-4">
@@ -37,9 +37,42 @@
                                     </div>
                                 </div>
                             </div> 
-                        </div>
+                        </div> -->
+
                         <!-- Respuesta del programa en js -->
-                        <div class="align-self-start">
+                        <!-- <div class="align-self-start">
+                            <div class="d-flex justify-content-start">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="d-flex justify-content-start gap-4">
+                                        <span></span>
+                                        <span><b>Bot</b></span>
+                                    </div>
+                                    <div class="d-flex justify-content-start gap-2">
+                                        <i class="bi bi-person-circle text-light"></i> -->
+                                        <!-- AQUI PONDREMOS EL MENSAJE -->
+                                        <!-- <span class="badge text-bg-success text-light texto-chat" name="mensaje">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi ullam ex dolores cum ipsum? Voluptate tenetur quidem quia, minima corrupti harum incidunt! Natus provident porro, atque qui facere veritatis?</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- Respuesta del usuario -->
+
+                        <div>
+                            <div class="d-flex justify-content-end">
+                                <div class="d-flex flex-column align-items-end" id="msg_user">
+                                    <!-- <div class="d-flex justify-content-end gap-4">
+                                        <span><b>Usuario</b></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <span class="badge text-bg-primary text-light texto-chat" name="mensaje">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi ullam ex dolores cum ipsum? Voluptate tenetur quidem quia, minima corrupti harum incidunt! Natus provident porro, atque qui facere veritatis?</span>
+                                        <i class="bi bi-person-circle text-light"></i>
+                                    </div> -->
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="align-self-start" id="msg_bot">
                             <div class="d-flex justify-content-start">
                                 <div class="d-flex flex-column align-items-start">
                                     <div class="d-flex justify-content-start gap-4">
@@ -48,6 +81,7 @@
                                     </div>
                                     <div class="d-flex justify-content-start gap-2">
                                         <i class="bi bi-person-circle text-light"></i>
+                                        <!-- AQUI PONDREMOS EL MENSAJE -->
                                         <span class="badge text-bg-success text-light texto-chat" name="mensaje">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nisi ullam ex dolores cum ipsum? Voluptate tenetur quidem quia, minima corrupti harum incidunt! Natus provident porro, atque qui facere veritatis?</span>
                                     </div>
                                 </div>
@@ -56,13 +90,76 @@
                 </main>
             </scroll-container>
 
-            <article class="d-flex flex-column align-items-center justify-content-end fixed-bottom" style="height: 44dvh;">
-                <div class="container d-flex col-10 gap-2" name="bar-chat">
+                
+
+            <article class="d-flex flex-column align-items-center justify-content-end fixed-bottom gap-2" style="height: 44dvh;">
+
+
+                <div class="container-fluid d-flex col-lg-6 col-sm-12 gap-2 flex-wrap justify-content-center" id="preguntas">
+                    
+                    <div class="d-flex col-sm-3 col-md-3 col-lg-2 gap-2" name="pregunta" style="cursor: pointer;">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="./web/srcs/quien_eres.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex justify-content-center align-items-center">
+                            <span>¿Quién eres?</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-sm-3 col-md-3 col-lg-2 gap-2" name="pregunta" style="cursor: pointer;">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="./web/srcs/que_sabes_hacer.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex justify-content-center align-items-center">
+                            <span>¿Qué sabes hacer?</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-sm-3 col-md-3 col-lg-2 gap-2" name="pregunta" style="cursor: pointer;">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="./web/srcs/que_has_estudiado.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex justify-content-center align-items-center">
+                            <span>¿Qué has estudiado?</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-sm-3 col-md-3 col-lg-2 gap-2" name="pregunta" style="cursor: pointer;">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="./web/srcs/algun_proyecto.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex justify-content-center align-items-center">
+                            <span>¿Has hecho algún proyecto?</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex col-sm-3 col-md-3 col-lg-2 gap-2" name="pregunta" style="cursor: pointer;">
+                        <div class="col-2 d-flex align-items-center justify-content-center">
+                            <img src="./web/srcs/como_contactar_contigo.png" alt="">
+                        </div>
+                        <div class="col-10 d-flex justify-content-center align-items-center">
+                            <span>¿Cómo contactar contigo?</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+
+
+
+
+
+
+                <div class="container d-flex col-lg-4 col-sm-10 gap-2" name="bar-chat" id="barChat" style="cursor: pointer;">
                     <div class="col-10 d-flex flex-column align-items-start justify-content-end gap-1 h-100">
                         <span>Escribe tu mensaje</span>
                         <hr class="border-light opacity-75 w-100" style="padding-top: .2rem; margin: 0rem;">
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">IMG</div>
+                    <div class="col-2 d-flex justify-content-center align-items-center">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
                 </div>
             </article>
         
