@@ -83,7 +83,7 @@
 
 @keyframes desplazar-preguntas-abajo{
     from{
-        transform: translate(0,-35dvh);
+        transform: translate(0,-72dvh);
     }
 
     to{
@@ -92,7 +92,9 @@
 }
 
 
-
+.margin-msg{
+    margin-bottom: 11rem;
+}
 
 :root{
     --color-primario:#2a2a2a;
@@ -151,18 +153,13 @@ body{
 
     .preguntas-aparecer-animation{
         animation: desplazar-preguntas-arriba .6s ease-in-out;
-        top: 15dvh;
+        top: -22dvh;
     }
 
     .preguntas-desaparecer-animation{
         animation: desplazar-preguntas-abajo .6s ease-in-out;
         top: 50dvh;
-        
     }
-
-    
-
-
 
     .button-abrir-animation{
         animation: girar .2s ease-in-out;
@@ -211,6 +208,88 @@ body{
     }
 
 }
+
+
+@media (min-width: 415px) and (max-width: 1366px) {
+    @keyframes desplazar-preguntas-arriba{
+        from{
+            transform: translate(0,50dvh);
+        }
+    
+        to{
+            transform: translate(0px,0dvh);
+        }
+    }
+    
+    @keyframes desplazar-preguntas-abajo{
+        from{
+            transform: translate(0,-65dvh);
+        }
+    
+        to{
+            transform: translate(0,0dvh);
+        }
+    }
+
+    body {
+        .preguntas-aparecer-animation{
+            animation: desplazar-preguntas-arriba .6s ease-in-out;
+            top: -15dvh;
+        }
+    
+        .preguntas-desaparecer-animation{
+            animation: desplazar-preguntas-abajo .6s ease-in-out;
+            top: 50dvh;
+        }
+    }
+}
+
+@media (min-width: 1367px) {
+
+    @keyframes desplazar-preguntas-arriba{
+        from{
+            transform: translate(0,50dvh);
+        }
+    
+        to{
+            transform: translate(0px,0dvh);
+        }
+    }
+    
+    @keyframes desplazar-preguntas-abajo{
+        from{
+            transform: translate(0,-56dvh);
+        }
+    
+        to{
+            transform: translate(0,0dvh);
+        }
+    }
+
+    .margin-msg{
+        margin-bottom: 3rem;
+    }
+
+    body {
+        .preguntas-aparecer-animation{
+            animation: desplazar-preguntas-arriba .6s ease-in-out;
+            top: -6dvh;
+        }
+    
+        .preguntas-desaparecer-animation{
+            animation: desplazar-preguntas-abajo .6s ease-in-out;
+            top: 50dvh;
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

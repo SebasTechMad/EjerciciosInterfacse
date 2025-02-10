@@ -12066,12 +12066,16 @@ textarea.form-control-lg {
 }
 @keyframes desplazar-preguntas-abajo {
   from {
-    transform: translate(0, -35dvh);
+    transform: translate(0, -72dvh);
   }
   to {
     transform: translate(0, 0dvh);
   }
 }
+.margin-msg {
+  margin-bottom: 11rem;
+}
+
 :root {
   --color-primario:#2a2a2a;
   --color-secundario:#2c2c2c;
@@ -12120,7 +12124,7 @@ body [id=preguntas] {
 }
 body .preguntas-aparecer-animation {
   animation: desplazar-preguntas-arriba 0.6s ease-in-out;
-  top: 15dvh;
+  top: -22dvh;
 }
 body .preguntas-desaparecer-animation {
   animation: desplazar-preguntas-abajo 0.6s ease-in-out;
@@ -12161,4 +12165,60 @@ body .segundo-boton-aparecer {
 body .segundo-boton-desaparecer {
   animation: desaparecer-segundo-boton 0.3s ease-in-out;
   transform: translate(0px, 0px);
+}
+
+@media (min-width: 415px) and (max-width: 1366px) {
+  @keyframes desplazar-preguntas-arriba {
+    from {
+      transform: translate(0, 50dvh);
+    }
+    to {
+      transform: translate(0px, 0dvh);
+    }
+  }
+  @keyframes desplazar-preguntas-abajo {
+    from {
+      transform: translate(0, -65dvh);
+    }
+    to {
+      transform: translate(0, 0dvh);
+    }
+  }
+  body .preguntas-aparecer-animation {
+    animation: desplazar-preguntas-arriba 0.6s ease-in-out;
+    top: -15dvh;
+  }
+  body .preguntas-desaparecer-animation {
+    animation: desplazar-preguntas-abajo 0.6s ease-in-out;
+    top: 50dvh;
+  }
+}
+@media (min-width: 1367px) {
+  @keyframes desplazar-preguntas-arriba {
+    from {
+      transform: translate(0, 50dvh);
+    }
+    to {
+      transform: translate(0px, 0dvh);
+    }
+  }
+  @keyframes desplazar-preguntas-abajo {
+    from {
+      transform: translate(0, -56dvh);
+    }
+    to {
+      transform: translate(0, 0dvh);
+    }
+  }
+  .margin-msg {
+    margin-bottom: 3rem;
+  }
+  body .preguntas-aparecer-animation {
+    animation: desplazar-preguntas-arriba 0.6s ease-in-out;
+    top: -6dvh;
+  }
+  body .preguntas-desaparecer-animation {
+    animation: desplazar-preguntas-abajo 0.6s ease-in-out;
+    top: 50dvh;
+  }
 }/*# sourceMappingURL=styles.css.map */
